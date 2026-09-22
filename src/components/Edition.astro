@@ -1,0 +1,39 @@
+---
+import type { Curation } from "../lib/data";
+import { formatLongDate, formatWeek } from "../lib/data";
+import Entry from "./Entry.astro";
+import Pulse from "./Pulse.astro";
+
+interface Props {
+  curation: Curation;
+  label?: string;
+  /** Yesterday's barometer, for the change line under the pulse. */
+  previousBarometer?: number;
+}
+
+const { curation, label, previousBarometer } = Astro.props;
+const heading =
+  curation.kind === "weekly"
+    ? `${formatWeek(curation.slug)} · week ending ${formatLongDate(curation.date)}`
+    : formatLongDate(curation.date);
+---
+
+<section class="edition">
+  <p class="edition__date">{label ?? heading}</p>
+  {curation.intro && <p class="edition__intro">{curation.intro}</p>}
+</section>
+
+{
+  curation.pulse && (
+    <Pulse
+      pulse={curation.pulse}
+      previous={previousBarometer}
+      label={curation.kind === "weekly" ? "The week's pulse" : "Daily pulse"}
+      previousLabel={curation.kind === "weekly" ? "last week" : "yesterday"}
+    />
+  )
+}
+
+<ol class="entries">
+  {curation.items.map((item, i) => <Entry item={item} index={i} />)}
+</ol>

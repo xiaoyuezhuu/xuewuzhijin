@@ -1,0 +1,58 @@
+---
+import type { Pulse } from "../../pipeline/types.ts";
+
+interface Props {
+  pulse: Pulse;
+  /** The preceding edition's reading, for the change line. */
+  previous?: number;
+  /** "Daily pulse" or "The week's pulse". */
+  label?: string;
+  /** What the change line compares against. */
+  previousLabel?: string;
+}
+
+const {
+  pulse,
+  previous,
+  label = "Daily pulse",
+  previousLabel = "yesterday",
+} = Astro.props;
+const value = Math.max(0, Math.min(100, pulse.barometer));
+
+// Three bands, matching the calibration the model is given.
+const band = value <= 40 ? "calm" : value <= 60 ? "mixed" : "elevated";
+
+const delta = previous === undefined ? null : value - previous;
+const deltaLabel =
+  delta === null || delta === 0
+    ? delta === 0
+      ? `unchanged from ${previousLabel}`
+      : null
+    : `${delta > 0 ? "up" : "down"} ${Math.abs(delta)} from ${previousLabel}`;
+---
+
+<section class="pulse">
+  <p class="kicker pulse__kicker">{label}</p>
+  <p class="pulse__text">{pulse.text}</p>
+
+  <figure class="barometer" data-band={band}>
+    <figcaption class="barometer__head">
+      <span class="barometer__label">Apocalypse barometer</span>
+      <span class="barometer__value">
+        {value}<span class="barometer__max">/100</span>
+      </span>
+    </figcaption>
+
+    <div
+      class="barometer__track"
+      role="img"
+      aria-label={`Apocalypse barometer: ${value} out of 100${deltaLabel ? `, ${deltaLabel}` : ""}`}
+    >
+      <span class="barometer__marker" style={`left: ${value}%`}></span>
+    </div>
+
+    <p class="barometer__note">
+      {pulse.reading}{deltaLabel && <span class="barometer__delta">{deltaLabel}</span>}
+    </p>
+  </figure>
+</section>

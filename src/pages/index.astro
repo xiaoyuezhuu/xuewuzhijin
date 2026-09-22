@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import Edition from "../components/Edition.astro";
+import { href, latestDaily, latestWeekly, formatWeek, previousBarometer } from "../lib/data";
+---
+
+<Base
+  title={latestDaily ? `學無止盡 · ${latestDaily.date}` : "學無止盡"}
+  edition="daily"
+  nav="today"
+>
+  {
+    latestDaily ? (
+      <>
+        <Edition curation={latestDaily} previousBarometer={previousBarometer(latestDaily.slug)} />
+        {latestWeekly && (
+          <aside class="band">
+            <p class="band__label">Sunday edition</p>
+            <p>
+              <a href={href(`/w/${latestWeekly.slug}`)}>
+                The best of {formatWeek(latestWeekly.slug)}
+              </a>
+            </p>
+          </aside>
+        )}
+      </>
+    ) : (
+      <aside class="band">
+        <p class="band__label">Nothing here yet</p>
+        <p>
+          Run <code>npm run curate</code> to produce the first edition, or
+          <code>npm run curate:dry</code> to preview the layout without calling the model.
+        </p>
+      </aside>
+    )
+  }
+</Base>

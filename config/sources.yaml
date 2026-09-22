@@ -1,0 +1,261 @@
+# ---------------------------------------------------------------------------
+# Sources, grouped by the five themes drawn from your own reading list.
+# Every feed below was fetched and parsed on 2026-09-18.
+#
+# Run `npm run sources:check` after editing; it pings every feed and reports
+# anything that 404s, redirects, or returns no items. Broken sources are also
+# skipped (with a warning) during a normal run rather than failing the build.
+#
+# topics: must be values from TOPICS in pipeline/types.ts —
+#   AI · AGI · Alignment · Economics · Geopolitics · FutureTech ·
+#   Neuroscience · SynBio · Design
+# ---------------------------------------------------------------------------
+
+rss:
+  # =========================================================================
+  # 1 · MACHINE LEARNING RESEARCH & PAPERS
+  # The priority theme. arXiv itself is configured further down, under `arxiv`.
+  # =========================================================================
+  - { name: "Hugging Face Daily Papers", url: "https://papers.takara.ai/api/feed", topics: [AI] }
+  - { name: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml", topics: [AI] }
+  - { name: "METR", url: "https://metr.org/feed.xml", topics: [Alignment, AI] }
+  - { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml", topics: [AI] }
+  - { name: "OpenAI", url: "https://openai.com/news/rss.xml", topics: [AI] }
+  - { name: "Google Research", url: "https://research.google/blog/rss/", topics: [AI] }
+  - { name: "Microsoft Research", url: "https://www.microsoft.com/en-us/research/feed/", topics: [AI] }
+  - { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml", topics: [AI] }
+  - { name: "Stanford AI Lab", url: "https://ai.stanford.edu/blog/feed.xml", topics: [AI] }
+  - { name: "EleutherAI", url: "https://blog.eleuther.ai/index.xml", topics: [AI] }
+  - { name: "The Gradient", url: "https://thegradient.pub/rss/", topics: [AI] }
+  - { name: "Ahead of AI", url: "https://magazine.sebastianraschka.com/feed", topics: [AI] }
+  - { name: "Lil'Log", url: "https://lilianweng.github.io/index.xml", topics: [AI, Alignment] }
+  - { name: "Sebastian Ruder", url: "https://www.ruder.io/rss/", topics: [AI] }
+  - { name: "Chip Huyen", url: "https://huyenchip.com/feed.xml", topics: [AI] }
+  - { name: "Jay Alammar", url: "https://jalammar.github.io/feed.xml", topics: [AI] }
+  - { name: "Simon Willison", url: "https://simonwillison.net/atom/everything/", topics: [AI] }
+  - { name: "Import AI", url: "https://importai.substack.com/feed", topics: [AI, AGI] }
+  - { name: "Interconnects", url: "https://www.interconnects.ai/feed", topics: [AI] }
+  - { name: "Dwarkesh Patel", url: "https://www.dwarkesh.com/feed", topics: [AI, AGI, Economics] }
+  - { name: "Epoch AI", url: "https://epochai.substack.com/feed", topics: [AI, Economics] }
+  # Checked and dead — no public feed as of 2026-09-18: Anthropic news and
+  # alignment.anthropic.com, transformer-circuits.pub (403), Sakana AI,
+  # Meta AI, Allen Institute, Stanford HAI, Apollo Research, ARC
+  # (alignment.org). Watch for one appearing.
+
+  # =========================================================================
+  # 2 · ALIGNMENT, SAFETY & AI GOVERNANCE
+  # =========================================================================
+  - { name: "Alignment Forum", url: "https://www.alignmentforum.org/feed.xml", topics: [Alignment] }
+  - { name: "LessWrong (curated)", url: "https://www.lesswrong.com/feed.xml?view=curated-rss", topics: [Alignment, AGI] }
+  - { name: "Don't Worry About the Vase", url: "https://thezvi.substack.com/feed", topics: [AI, Alignment] }
+  - { name: "Transformer", url: "https://www.transformernews.ai/feed", topics: [Alignment, AI] }
+  - { name: "AI Snake Oil", url: "https://www.aisnakeoil.com/feed", topics: [AI, Economics] }
+  - { name: "Redwood Research", url: "https://redwoodresearch.substack.com/feed", topics: [Alignment] }
+  - { name: "AI Safety Newsletter", url: "https://newsletter.safe.ai/feed", topics: [Alignment] }
+  - { name: "80,000 Hours", url: "https://80000hours.org/feed/", topics: [Alignment, AGI] }
+  - { name: "AI Futures Project", url: "https://blog.ai-futures.org/feed", topics: [AGI, Alignment] }
+  - { name: "Obsolete", url: "https://www.obsolete.pub/feed", topics: [AGI, Alignment] }
+  - { name: "Hyperdimensional", url: "https://www.hyperdimensional.co/feed", topics: [Geopolitics, Alignment] }
+  - { name: "Lawfare", url: "https://www.lawfaremedia.org/feeds/articles", topics: [Geopolitics] }
+  - { name: "ChinaTalk", url: "https://www.chinatalk.media/feed", topics: [Geopolitics, AI] }
+  - { name: "Understanding AI", url: "https://www.understandingai.org/feed", topics: [AI, Economics] }
+  - { name: "Asterisk", url: "https://asteriskmag.com/feed", topics: [AI, FutureTech] }
+  - { name: "Astral Codex Ten", url: "https://www.astralcodexten.com/feed", topics: [AI, Neuroscience] }
+
+  # =========================================================================
+  # 3 · TECHNOLOGY, ECONOMICS & GEOPOLITICS
+  # =========================================================================
+  - { name: "Stratechery", url: "https://stratechery.com/feed/", topics: [Economics, AI] }
+  - { name: "Noahpinion", url: "https://www.noahpinion.blog/feed", topics: [Economics] }
+  - { name: "Foreign Affairs", url: "https://www.foreignaffairs.com/rss.xml", topics: [Geopolitics] }
+  - { name: "MIT Technology Review", url: "https://www.technologyreview.com/feed/", topics: [AI, FutureTech] }
+  - { name: "Sequoia Capital", url: "https://www.sequoiacap.com/feed/", topics: [Economics, AI] }
+  - { name: "Marginal Revolution", url: "https://marginalrevolution.com/feed", topics: [Economics] }
+  - { name: "Construction Physics", url: "https://www.construction-physics.com/feed", topics: [FutureTech, Economics] }
+  - { name: "Apricitas Economics", url: "https://www.apricitas.io/feed", topics: [Economics] }
+  - { name: "The Overshoot", url: "https://theovershoot.co/feed", topics: [Economics] }
+  - { name: "Slow Boring", url: "https://www.slowboring.com/feed", topics: [Geopolitics, Economics] }
+  - { name: "Benedict Evans", url: "https://www.ben-evans.com/benedictevans?format=rss", topics: [Economics, AI] }
+  - { name: "The Diff", url: "https://www.thediff.co/feed", topics: [Economics] }
+  - { name: "Exponential View", url: "https://www.exponentialview.co/feed", topics: [Economics, AI] }
+  - { name: "War on the Rocks", url: "https://warontherocks.com/feed/", topics: [Geopolitics] }
+  - { name: "Chartbook", url: "https://adamtooze.substack.com/feed", topics: [Economics, Geopolitics] }
+  - { name: "Platformer", url: "https://www.platformer.news/rss/", topics: [AI, Economics] }
+  - { name: "One Useful Thing", url: "https://www.oneusefulthing.org/feed", topics: [Economics, AI] }
+  - { name: "IEEE Spectrum", url: "https://spectrum.ieee.org/feeds/feed.rss", topics: [FutureTech] }
+
+  # =========================================================================
+  # 4 · NEUROSCIENCE & THE MIND
+  # =========================================================================
+  - { name: "The Transmitter", url: "https://www.thetransmitter.org/feed/", topics: [Neuroscience] }
+  - { name: "The Intrinsic Perspective", url: "https://www.theintrinsicperspective.com/feed", topics: [Neuroscience] }
+  - { name: "Neuron", url: "https://www.cell.com/neuron/inpress.rss", topics: [Neuroscience] }
+  # All nature.com feeds are out: the site fingerprints the TLS handshake and
+  # serves Node an HTML interstitial instead of XML, whatever headers you send.
+  # nature.rss answered intermittently, the journal feeds never did. Working
+  # around a publisher's bot protection in an unattended job isn't worth it;
+  # bioRxiv, eLife, Neuron, Science News and Quanta cover the same ground.
+  - { name: "Neuroscience News", url: "https://neurosciencenews.com/feed/", topics: [Neuroscience] }
+  - { name: "bioRxiv Neuroscience", url: "http://connect.biorxiv.org/biorxiv_xml.php?subject=neuroscience", topics: [Neuroscience] }
+  - { name: "eLife Neuroscience", url: "https://elifesciences.org/rss/subject/neuroscience.xml", topics: [Neuroscience] }
+  - { name: "Experimental History", url: "https://www.experimental-history.com/feed", topics: [Neuroscience] }
+  - { name: "Nautilus", url: "https://nautil.us/feed/", topics: [Neuroscience, FutureTech] }
+  - { name: "Quanta Magazine", url: "https://www.quantamagazine.org/feed/", topics: [Neuroscience, FutureTech] }
+
+  # =========================================================================
+  # 5 · BIOLOGY, PROGRESS & FUTURE TECHNOLOGY
+  # =========================================================================
+  - { name: "Asimov Press", url: "https://www.asimov.press/feed", topics: [SynBio] }
+  - { name: "In the Pipeline", url: "https://www.science.org/blogs/pipeline/feed", topics: [SynBio] }
+  - { name: "bioRxiv Synthetic Biology", url: "http://connect.biorxiv.org/biorxiv_xml.php?subject=synthetic_biology", topics: [SynBio] }
+  - { name: "Science News", url: "https://www.science.org/rss/news_current.xml", topics: [SynBio, Neuroscience] }
+  - { name: "Works in Progress", url: "https://worksinprogress.co/rss.xml", topics: [FutureTech, Economics] }
+  - { name: "Roots of Progress", url: "https://rootsofprogress.org/feed.xml", topics: [FutureTech] }
+  - { name: "Age of Invention", url: "https://www.ageofinvention.xyz/feed", topics: [FutureTech, Economics] }
+  - { name: "Nintil", url: "https://nintil.com/rss.xml", topics: [FutureTech, SynBio] }
+  - { name: "Owl Posting", url: "https://www.owlposting.com/feed", topics: [SynBio] }
+  - { name: "Casey Handmer", url: "https://caseyhandmer.wordpress.com/feed/", topics: [FutureTech] }
+  - { name: "Austin Vernon", url: "https://austinvernon.site/rss.xml", topics: [FutureTech] }
+  - { name: "Ars Technica Science", url: "https://feeds.arstechnica.com/arstechnica/science", topics: [FutureTech, SynBio] }
+
+
+  # =========================================================================
+  # 6 · RESEARCHERS & INDIVIDUAL VOICES
+  # Twenty people at the frontier who publish somewhere readable, plus the
+  # adjacent voices below them. Personal blogs are low-volume and high-signal;
+  # the social feeds are the opposite, so they sit in their own block and are
+  # easy to cut. Every account was identity-checked on 2026-09-18 — Bluesky
+  # via its public profile API, so none of these is a lookalike handle.
+  # =========================================================================
+
+  # --- the twenty ---------------------------------------------------------
+  - { name: "Terence Tao", url: "https://terrytao.wordpress.com/feed/", topics: [FutureTech, AI] }
+  - { name: "Yoshua Bengio", url: "https://yoshuabengio.org/feed/", topics: [Alignment, AI] }
+  - { name: "Andrej Karpathy", url: "https://karpathy.bearblog.dev/feed/", topics: [AI] }
+  - { name: "Chris Olah", url: "https://colah.github.io/rss.xml", topics: [Alignment, AI] }
+  - { name: "François Chollet", url: "https://fchollet.substack.com/feed", topics: [AI, AGI] }
+  - { name: "Scott Aaronson", url: "https://scottaaronson.blog/?feed=rss2", topics: [FutureTech, Alignment] }
+  - { name: "Paul Christiano", url: "https://ai-alignment.com/feed", topics: [Alignment] }
+  - { name: "Jacob Steinhardt", url: "https://bounded-regret.ghost.io/rss/", topics: [Alignment, AI] }
+  - { name: "Neel Nanda", url: "https://www.neelnanda.io/blog?format=rss", topics: [Alignment] }
+  - { name: "Jan Leike", url: "https://aligned.substack.com/feed", topics: [Alignment] }
+  - { name: "Nicholas Carlini", url: "https://nicholas.carlini.com/writing/feed.xml", topics: [Alignment, AI] }
+  - { name: "Tim Dettmers", url: "https://timdettmers.com/feed/", topics: [AI] }
+  - { name: "Sander Dieleman", url: "https://sander.ai/feed.xml", topics: [AI] }
+  - { name: "Ferenc Huszár", url: "https://www.inference.vc/rss/", topics: [AI] }
+  - { name: "Jascha Sohl-Dickstein", url: "https://sohl-dickstein.github.io/feed.xml", topics: [AI] }
+  - { name: "David Ha", url: "https://blog.otoro.net/feed.xml", topics: [AI] }
+  - { name: "Gwern", url: "https://gwern.net/rss.xml", topics: [AI, AGI] }
+  - { name: "Richard Ngo", url: "https://www.narrativeark.xyz/feed", topics: [Alignment, AGI] }
+  - { name: "Beren Millidge", url: "https://www.beren.io/feed.xml", topics: [AI, Alignment] }
+  - { name: "Miles Brundage", url: "https://milesbrundage.substack.com/feed", topics: [Alignment, Geopolitics] }
+  # Geoffrey Hinton has no blog and no Bluesky account — he posts only on X.
+  # His handle is in the `x` queries at the bottom of this file, which come
+  # alive as soon as X_BEARER_TOKEN is set.
+
+  # --- adjacent voices: policy, critique, and the wider conversation -------
+  - { name: "Helen Toner", url: "https://helentoner.substack.com/feed", topics: [Geopolitics, Alignment] }
+  - { name: "Melanie Mitchell", url: "https://aiguide.substack.com/feed", topics: [AI, AGI] }
+  - { name: "Gary Marcus", url: "https://garymarcus.substack.com/feed", topics: [AI, AGI] }
+  - { name: "Ben Recht", url: "https://www.argmin.net/feed", topics: [AI] }
+  - { name: "Andrew Gelman", url: "https://statmodeling.stat.columbia.edu/feed/", topics: [AI, Economics] }
+  - { name: "Rodney Brooks", url: "https://rodneybrooks.com/feed/", topics: [AI, FutureTech] }
+  - { name: "Stephen Wolfram", url: "https://writings.stephenwolfram.com/feed/", topics: [FutureTech, AI] }
+  - { name: "Sam Altman", url: "https://blog.samaltman.com/posts.atom", topics: [AGI, Economics] }
+
+  # --- social feeds -------------------------------------------------------
+  # Mastodon and Bluesky both expose RSS without an API key: append .rss to a
+  # Mastodon profile, or /rss to a Bluesky one. Short posts and replies, so
+  # expect these to lose to essays in triage — that is the intended behaviour.
+  # Delete this block if the noise annoys you.
+  - { name: "Terence Tao (Mastodon)", url: "https://mathstodon.xyz/@tao.rss", topics: [FutureTech, AI] }
+  - { name: "Yoshua Bengio (Bluesky)", url: "https://bsky.app/profile/yoshuabengio.bsky.social/rss", topics: [Alignment] }
+  - { name: "Andrej Karpathy (Bluesky)", url: "https://bsky.app/profile/karpathy.bsky.social/rss", topics: [AI] }
+  - { name: "David Ha (Bluesky)", url: "https://bsky.app/profile/hardmaru.bsky.social/rss", topics: [AI] }
+  - { name: "Emily M. Bender (Bluesky)", url: "https://bsky.app/profile/emilymbender.bsky.social/rss", topics: [AI] }
+  - { name: "Margaret Mitchell (Bluesky)", url: "https://bsky.app/profile/mmitchell.bsky.social/rss", topics: [AI, Alignment] }
+
+  # =========================================================================
+  # 7 · DESIGN & DATA STORYTELLING
+  # From Minimal Gallery and The Pudding in your list. Off the main brief —
+  # delete this block (and the Design topic) if you'd rather keep it out.
+  # =========================================================================
+  - { name: "The Pudding", url: "https://pudding.cool/feed/index.xml", topics: [Design] }
+  - { name: "Minimal Gallery", url: "https://minimal.gallery/feed/", topics: [Design] }
+
+# Hacker News, via the free Algolia API. Stories are pulled per query and
+# filtered by points, so this stays a high-signal channel rather than a firehose.
+hn:
+  enabled: true
+  minPoints: 120
+  queries:
+    - AI alignment
+    - AGI
+    - interpretability
+    - language model
+    - neuroscience
+    - synthetic biology
+    - protein design
+    - brain computer interface
+
+# arXiv, via its free API — the other half of the ML-papers theme.
+# `maxPerCategory` keeps any one category from flooding the candidate pool.
+arxiv:
+  enabled: true
+  maxPerCategory: 12
+  categories:
+    - cs.AI
+    - cs.LG
+    - cs.CL    # computation and language — most LLM work lands here
+    - cs.CY    # computers and society — AI policy and impact
+    - stat.ML
+    - q-bio.NC # neurons and cognition
+    - q-bio.QM # quantitative methods / synthetic biology
+  # Keyword filter over titles and abstracts. Empty = no filter.
+  keywords:
+    - alignment
+    - interpretab
+    - evaluation
+    - benchmark
+    - scaling
+    - reasoning
+    - agent
+    - safety
+    - emergent
+    - reinforcement learning
+    - protein
+    - neural circuit
+
+# Reddit. Needs REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET; skipped without them.
+reddit:
+  enabled: true
+  minScore: 100
+  subreddits:
+    - MachineLearning
+    - ControlProblem
+    - singularity
+    - neuro
+    - synthbio
+    - mlscaling
+
+# YouTube, via per-channel Atom feeds (no API key needed). You need the
+# channel ID, not the handle — run `npm run sources:youtube -- @handle` to
+# resolve one. Placeholder: add your own.
+youtube:
+  enabled: true
+  channels: []
+  # - { name: Example Channel, channelId: "UCxxxxxxxxxxxxxxxxxxxxxx", topics: [AI] }
+
+# X/Twitter. Needs X_BEARER_TOKEN with recent-search access (Basic tier+);
+# skipped without it. Queries use X's search syntax.
+x:
+  enabled: true
+  minLikes: 150
+  maxResults: 50
+  queries:
+    - "(AI safety OR alignment OR interpretability) -is:retweet lang:en"
+    - "(AGI OR \"frontier model\") -is:retweet lang:en"
+    # Frontier figures with no blog and no Bluesky — X is the only place they
+    # post. Verify each handle before enabling; a wrong one silently returns
+    # nothing. minLikes still applies, so only widely-read posts surface.
+    - "(from:geoffreyhinton OR from:ylecun OR from:demishassabis) -is:retweet"

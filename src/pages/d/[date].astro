@@ -1,0 +1,19 @@
+---
+import Base from "../../layouts/Base.astro";
+import Edition from "../../components/Edition.astro";
+import { dailies, previousBarometer } from "../../lib/data";
+import type { Curation } from "../../lib/data";
+
+export function getStaticPaths() {
+  return dailies.map((curation) => ({
+    params: { date: curation.slug },
+    props: { curation },
+  }));
+}
+
+const { curation } = Astro.props as { curation: Curation };
+---
+
+<Base title={`學無止盡 · ${curation.date}`} edition="daily" nav="archive">
+  <Edition curation={curation} previousBarometer={previousBarometer(curation.slug)} />
+</Base>

@@ -1,0 +1,124 @@
+---
+import "@fontsource-variable/newsreader";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/500.css";
+import "../styles/global.css";
+import { href } from "../lib/data";
+
+interface Props {
+  title: string;
+  description?: string;
+  edition?: "daily" | "weekly";
+  nav?: "today" | "week" | "archive";
+}
+
+const {
+  title,
+  description = "A daily curation of things worth reading — AI, alignment, economics, neuroscience, synthetic biology.",
+  edition = "daily",
+  nav = "today",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-edition={edition}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="學無止盡 · Infinite Learning"
+      href={href("rss.xml")}
+    />
+    <script is:inline>
+      // Runs before paint: no flash of the wrong theme on load.
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch {
+        /* private mode, blocked storage — the system preference still applies */
+      }
+    </script>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='25' x='1' font-size='26' font-family='serif'%3E學%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="masthead">
+        <a class="wordmark" href={href("/")}>學無止盡</a>
+        <p class="masthead__latin">Infinite learning, for 10% apocalypse literacy</p>
+        <nav class="nav">
+          <a href={href("/")} aria-current={nav === "today" ? "page" : undefined}>Today</a>
+          <a href={href("/week")} aria-current={nav === "week" ? "page" : undefined}>This week</a>
+          <a href={href("/archive")} aria-current={nav === "archive" ? "page" : undefined}>Archive</a>
+          <button class="nav__theme" type="button" data-theme-toggle aria-label="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path d="M12 2.2v2.2M12 19.6v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6" />
+            </svg>
+          </button>
+        </nav>
+      </header>
+      <hr class="rule" />
+
+      <main>
+        <slot />
+      </main>
+
+      <footer class="footer">
+        <span>Curated daily by machine, for one reader.</span>
+        <span>
+          <a href={href("/archive")}>Archive</a> · <a href={href("rss.xml")}>RSS</a>
+        </span>
+      </footer>
+    </div>
+
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+        const button = document.querySelector("[data-theme-toggle]");
+        if (!button) return;
+
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const current = () =>
+          root.dataset.theme ?? (systemDark.matches ? "dark" : "light");
+
+        const describe = () => {
+          const next = current() === "dark" ? "light" : "dark";
+          button.setAttribute("aria-label", `Switch to ${next} mode`);
+          button.setAttribute("title", `Switch to ${next} mode`);
+        };
+
+        button.addEventListener("click", () => {
+          const next = current() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try {
+            localStorage.setItem("theme", next);
+          } catch {
+            /* the choice just won't survive a reload */
+          }
+          describe();
+        });
+
+        // Track the system preference until the reader overrides it.
+        systemDark.addEventListener("change", describe);
+        describe();
+      })();
+    </script>
+  </body>
+</html>

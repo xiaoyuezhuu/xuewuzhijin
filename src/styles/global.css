@@ -1,0 +1,541 @@
+/* ---------------------------------------------------------------------------
+   學無止盡 — a reading surface, not an interface.
+   One serif, one mono, a hairline rule, and as much air as the page allows.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --paper: #faf7f0;
+  --paper-sunk: #f2ece0;
+  --ink: #17140f;
+  --ink-soft: #544c42;
+  --ink-faint: #8d8478;
+  --rule: #ded5c5;
+  --accent: #9d3a1e;
+
+  /* Topic families. Technology blue, life sciences green, money and power
+     orange, design a quiet violet. Each is tuned to carry at 0.66rem. */
+  --topic-tech: #1f5697;
+  --topic-bio: #2c6b47;
+  --topic-econ: #a75c15;
+  --topic-design: #6a4b8c;
+
+  /* Barometer bands: calm, mixed, elevated. The track carries all three as a
+     faint gradient, so the scale is its own legend and needs no key. */
+  --baro-calm: #3f7a55;
+  --baro-mixed: #b07d1c;
+  --baro-elevated: #a5371d;
+
+  --serif: "Newsreader Variable", Newsreader, Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --measure: 42rem;
+  --step: clamp(1.05rem, 0.98rem + 0.3vw, 1.175rem);
+}
+
+/* The weekly edition shifts the accent rather than the whole design. */
+:root[data-edition="weekly"] {
+  --accent: #1f5c58;
+  --paper: #f7f5ee;
+}
+
+/* The dark palette is declared twice on purpose: once for readers who never
+   touch the switch and whose system asks for dark, once for readers who chose
+   dark explicitly. CSS has no way to share one block between the two. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121110;
+    --paper-sunk: #1a1816;
+    --ink: #ece5d9;
+    --ink-soft: #a89f92;
+    --ink-faint: #776e63;
+    --rule: #2c2823;
+    --accent: #dd7c52;
+    --topic-tech: #7ba7e0;
+    --topic-bio: #74b58c;
+    --topic-econ: #d9a05c;
+    --topic-design: #b096d6;
+    --baro-calm: #6dad83;
+    --baro-mixed: #d8ab55;
+    --baro-elevated: #dd7f5f;
+  }
+  :root[data-edition="weekly"]:not([data-theme="light"]) {
+    --accent: #6fb3a8;
+    --paper: #101211;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #121110;
+  --paper-sunk: #1a1816;
+  --ink: #ece5d9;
+  --ink-soft: #a89f92;
+  --ink-faint: #776e63;
+  --rule: #2c2823;
+  --accent: #dd7c52;
+  --topic-tech: #7ba7e0;
+  --topic-bio: #74b58c;
+  --topic-econ: #d9a05c;
+  --topic-design: #b096d6;
+  --baro-calm: #6dad83;
+  --baro-mixed: #d8ab55;
+  --baro-elevated: #dd7f5f;
+}
+
+:root[data-theme="dark"][data-edition="weekly"] {
+  --accent: #6fb3a8;
+  --paper: #101211;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--step);
+  line-height: 1.62;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+  width: min(100% - 2rem, var(--measure));
+  margin-inline: auto;
+}
+
+a { color: inherit; }
+
+/* --- shared type ---------------------------------------------------------- */
+
+.kicker {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--entry-accent, var(--accent));
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 0;
+}
+
+/* --- masthead ------------------------------------------------------------- */
+
+.masthead {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem) 0;
+  text-align: center;
+}
+
+.wordmark {
+  display: inline-block;
+  font-size: clamp(2.6rem, 9vw, 4rem);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-indent: 0.08em; /* balances the trailing letter-space */
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.wordmark:hover { color: var(--accent); }
+
+.masthead__latin {
+  margin: 1.1rem auto 0;
+  max-width: 30rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.7;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-wrap: balance;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  padding-bottom: 1.1rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nav a {
+  color: var(--ink-faint);
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover { color: var(--ink); }
+.nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+/* --- theme switch --------------------------------------------------------- */
+
+.nav__theme {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0 0 0.2rem;
+  margin: 0;
+  font: inherit;
+  color: var(--ink-faint);
+  cursor: pointer;
+  line-height: 1;
+  border-bottom: 1px solid transparent;
+}
+
+.nav__theme:hover { color: var(--ink); }
+
+.nav__theme:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.nav__theme svg {
+  display: block;
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+/* Each glyph shows the mode the switch would take you *to*, so exactly one is
+   visible: a moon while reading light, a sun while reading dark. */
+.nav__theme .icon-sun { display: none; }
+.nav__theme .icon-moon { display: block; }
+
+:root[data-theme="dark"] .nav__theme .icon-sun { display: block; }
+:root[data-theme="dark"] .nav__theme .icon-moon { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .nav__theme .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .nav__theme .icon-moon { display: none; }
+}
+
+/* --- edition header ------------------------------------------------------- */
+
+.edition {
+  padding-block: clamp(2.25rem, 5vw, 3.5rem) 0;
+  text-align: center;
+}
+
+.edition__date {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.edition__intro {
+  margin: 1.4rem auto 0;
+  max-width: 34rem;
+  font-size: 1.22em;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
+
+/* --- daily pulse ---------------------------------------------------------- */
+
+/* The pulse belongs to the header block with the dateline, so the rule that
+   separates it from the seven items sits below it, not above. */
+.pulse {
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+  padding-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.pulse + .entries {
+  margin-top: 0;
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+  border-top: 1px solid var(--rule);
+}
+
+.pulse__kicker {
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+.pulse__text {
+  margin: 1rem auto 0;
+  max-width: 36rem;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--ink);
+}
+
+.barometer {
+  margin: clamp(1.75rem, 4vw, 2.5rem) auto 0;
+  max-width: 32rem;
+}
+
+.barometer[data-band="calm"] { --baro: var(--baro-calm); }
+.barometer[data-band="mixed"] { --baro: var(--baro-mixed); }
+.barometer[data-band="elevated"] { --baro: var(--baro-elevated); }
+
+.barometer__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.barometer__value {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--baro);
+}
+
+.barometer__max {
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+.barometer__track {
+  position: relative;
+  height: 2px;
+  margin-top: 0.75rem;
+  border-radius: 1px;
+  /* The scale runs calm → acute, so where the marker sits is the whole story. */
+  background: linear-gradient(
+    90deg,
+    var(--baro-calm) 0%,
+    var(--baro-mixed) 52%,
+    var(--baro-elevated) 100%
+  );
+  opacity: 0.85;
+}
+
+/* A hairline at each band boundary, so 40 and 60 are readable positions. */
+.barometer__track::before,
+.barometer__track::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 1px;
+  background: var(--paper);
+  opacity: 0.85;
+}
+
+.barometer__track::before { left: 40%; }
+.barometer__track::after { left: 60%; }
+
+.barometer__marker {
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  margin-left: -4.5px;
+  border-radius: 50%;
+  background: var(--baro);
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 3px var(--paper);
+}
+
+.barometer__note {
+  margin: 0.9rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+.barometer__delta::before {
+  content: "·";
+  padding-inline: 0.5em;
+  opacity: 0.5;
+}
+
+/* --- entries -------------------------------------------------------------- */
+
+.entries {
+  list-style: none;
+  margin: clamp(2.5rem, 6vw, 4rem) 0 0;
+  padding: 0;
+}
+
+.entry[data-family="tech"] { --entry-accent: var(--topic-tech); }
+.entry[data-family="bio"] { --entry-accent: var(--topic-bio); }
+.entry[data-family="econ"] { --entry-accent: var(--topic-econ); }
+.entry[data-family="design"] { --entry-accent: var(--topic-design); }
+
+.entry {
+  position: relative;
+  padding-block: clamp(2rem, 4vw, 2.75rem);
+  border-top: 1px solid var(--rule);
+}
+
+.entry:first-child { border-top: 0; padding-top: 0; }
+
+.entry__num {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  margin-bottom: 0.75rem;
+}
+
+.entry__title {
+  margin: 0.45rem 0 0;
+  font-size: clamp(1.45rem, 1.2rem + 1.1vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.008em;
+  text-wrap: pretty;
+}
+
+.entry__title a {
+  text-decoration: none;
+  background-image: linear-gradient(var(--rule), var(--rule));
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.15s ease, color 0.15s ease;
+}
+
+.entry__title a:hover {
+  color: var(--entry-accent, var(--accent));
+  background-image: linear-gradient(
+    var(--entry-accent, var(--accent)),
+    var(--entry-accent, var(--accent))
+  );
+}
+
+.entry__meta {
+  margin: 0.85rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.entry__meta .sep { opacity: 0.5; padding-inline: 0.45em; }
+
+.entry__note {
+  margin: 1rem 0 0;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+/* On wide screens the number hangs in the margin, out of the reading column. */
+@media (min-width: 62rem) {
+  .entry__num {
+    position: absolute;
+    left: -4.25rem;
+    top: clamp(2rem, 4vw, 2.75rem);
+    margin: 0;
+    text-align: right;
+    width: 2.5rem;
+  }
+  .entry:first-child .entry__num { top: 0; }
+}
+
+/* --- callout band (this week's best, empty states) ------------------------ */
+
+.band {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding: 1.75rem 1.5rem;
+  background: var(--paper-sunk);
+  text-align: center;
+}
+
+.band a { color: var(--accent); }
+
+.band p { margin: 0; }
+.band p + p { margin-top: 0.5rem; }
+
+.band__label {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* --- archive -------------------------------------------------------------- */
+
+.archive {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+.archive li { border-top: 1px solid var(--rule); }
+
+.archive a {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 1.05rem;
+  text-decoration: none;
+}
+
+.archive a:hover .archive__titles { color: var(--accent); }
+
+.archive__date {
+  flex: 0 0 auto;
+  width: 6.5rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.archive__titles {
+  color: var(--ink-soft);
+  font-size: 0.95em;
+  line-height: 1.45;
+}
+
+/* --- footer --------------------------------------------------------------- */
+
+.footer {
+  margin-top: clamp(4rem, 9vw, 7rem);
+  padding-block: 2rem 3.5rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  justify-content: space-between;
+}
+
+.footer a { text-decoration: none; }
+.footer a:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

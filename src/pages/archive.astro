@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+import { dailies, weeklies, formatArchiveDate, formatWeek, href } from "../lib/data";
+
+const entries = [
+  ...weeklies.map((c) => ({ curation: c, path: `/w/${c.slug}`, label: formatWeek(c.slug) })),
+  ...dailies.map((c) => ({
+    curation: c,
+    path: `/d/${c.slug}`,
+    label: formatArchiveDate(c.date),
+  })),
+].sort((a, b) => b.curation.date.localeCompare(a.curation.date));
+---
+
+<Base title="學無止盡 · archive" nav="archive">
+  <section class="edition">
+    <p class="edition__date">
+      Archive · {entries.length} {entries.length === 1 ? "edition" : "editions"}
+    </p>
+  </section>
+
+  {
+    entries.length ? (
+      <ol class="archive">
+        {entries.map(({ curation, path, label }) => (
+          <li>
+            <a href={href(path)}>
+              <span class="archive__date">{label}</span>
+              <span class="archive__titles">
+                {curation.items.slice(0, 3).map((item) => item.title).join(" · ")}
+                {curation.items.length > 3 && ` · +${curation.items.length - 3} more`}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <aside class="band">
+        <p class="band__label">Empty</p>
+        <p>No editions have been published yet.</p>
+      </aside>
+    )
+  }
+</Base>

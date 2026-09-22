@@ -1,0 +1,38 @@
+{
+  "name": "xuewuzhijin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "\u5b78\u7121\u6b62\u5883 \u2014 a daily curation of things worth reading",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "curate": "node --env-file-if-exists=.env --import tsx pipeline/daily.ts",
+    "curate:dry": "node --env-file-if-exists=.env --import tsx pipeline/daily.ts --no-llm",
+    "weekly": "node --env-file-if-exists=.env --import tsx pipeline/weekly.ts",
+    "sources:check": "node --env-file-if-exists=.env --import tsx pipeline/tools/check-sources.ts",
+    "sources:youtube": "node --env-file-if-exists=.env --import tsx pipeline/tools/resolve-youtube.ts",
+    "typecheck": "tsc --noEmit && astro check",
+    "llm:check": "node --env-file-if-exists=.env --import tsx pipeline/tools/check-llm.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.127.0",
+    "@fontsource-variable/newsreader": "^5.2.5",
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "@mozilla/readability": "^0.6.0",
+    "astro": "^5.14.0",
+    "fast-xml-parser": "^5.2.5",
+    "jsdom": "^26.1.0",
+    "openai": "^7.21.0",
+    "yaml": "^2.8.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  }
+}

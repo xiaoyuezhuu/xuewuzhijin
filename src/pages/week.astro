@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+import Edition from "../components/Edition.astro";
+import { href, latestWeekly, previousBarometer } from "../lib/data";
+---
+
+<Base
+  title={latestWeekly ? `學無止盡 · best of ${latestWeekly.slug}` : "學無止盡 · this week"}
+  edition="weekly"
+  nav="week"
+>
+  {
+    latestWeekly ? (
+      <Edition curation={latestWeekly} previousBarometer={previousBarometer(latestWeekly.slug, "weekly")} />
+    ) : (
+      <aside class="band">
+        <p class="band__label">Not yet</p>
+        <p>
+          The weekly edition is assembled every Sunday from the week's dailies.
+          Run <code>npm run weekly</code> once a few dailies exist, or see the
+          <a href={href("/archive")}>archive</a>.
+        </p>
+      </aside>
+    )
+  }
+</Base>

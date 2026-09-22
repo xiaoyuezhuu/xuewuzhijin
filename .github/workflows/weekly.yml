@@ -1,0 +1,59 @@
+name: Weekly curation
+
+on:
+  schedule:
+    # 14:00 UTC on Sundays — after the day's daily run has landed.
+    - cron: "0 14 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: curation
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Assemble the week
+        timeout-minutes: 30
+        run: npm run weekly
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'meta' }}
+          MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+
+      - name: Commit the weekly
+        run: |
+          git config user.name "xuewuzhijin"
+          git config user.email "noreply@users.noreply.github.com"
+          git add data
+          # Nothing to say if the run produced no change.
+          git diff --staged --quiet && exit 0
+          git commit -m "Best of the week ending $(date -u +%F)"
+          # Another run (or a manual push) may have landed meanwhile.
+          git pull --rebase --autostash origin main
+          git push
+
+  # A GITHUB_TOKEN commit doesn't trigger other workflows, so publish from here.
+  publish:
+    needs: curate
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

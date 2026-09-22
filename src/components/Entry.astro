@@ -1,0 +1,39 @@
+---
+import type { CuratedItem } from "../lib/data";
+import { KIND_LABELS, TOPIC_LABELS, familyOf, formatShortDate, hostOf } from "../lib/data";
+
+interface Props {
+  item: CuratedItem;
+  index: number;
+}
+
+const { item, index } = Astro.props;
+
+const meta = [
+  item.source,
+  KIND_LABELS[item.kind],
+  item.readingMinutes ? `${item.readingMinutes} min` : undefined,
+  formatShortDate(item.publishedAt),
+].filter(Boolean) as string[];
+---
+
+<li class="entry" data-family={familyOf(item.topic)}>
+  <div class="entry__num">{String(index + 1).padStart(2, "0")}</div>
+  <p class="kicker">{TOPIC_LABELS[item.topic] ?? item.topic}</p>
+  <h2 class="entry__title">
+    <a href={item.url} rel="noopener noreferrer" target="_blank" title={hostOf(item.url)}>
+      {item.title}
+    </a>
+  </h2>
+  <p class="entry__meta">
+    {
+      meta.map((part, i) => (
+        <>
+          {i > 0 && <span class="sep">·</span>}
+          {part}
+        </>
+      ))
+    }
+  </p>
+  <p class="entry__note">{item.note}</p>
+</li>
