@@ -1,0 +1,92 @@
+{
+  "kind": "daily",
+  "date": "2026-10-03",
+  "slug": "2026-10-03",
+  "generatedAt": "2026-10-03T15:12:06.052Z",
+  "intro": "Evals under scrutiny, agents misbehaving, and a fight over what counts as reasoning.",
+  "pulse": {
+    "text": "Frontier talk was quiet on new models and loud on measurement: Argo-Bench and KaliBench pushed agents toward enterprise warehouses and live Kali commands, while a cheap probe showed keyword harnesses crediting tool use that never happened. Press and public cycled between normal-technology polemics and creativity demos, exemplified by dueling AI diss tracks, as scientists debated fraud guardrails after agents refused to p-hack null datasets. Researchers stayed preoccupied with post-training plumbing — SFT versus RL, context compaction, response masking — and with whether LLMs reason at all, the Graepel-AlphaGo comparison drawing the clear line.",
+    "barometer": 70,
+    "reading": "P-hacking refusals calmed fraud fears; cyber tool-use gains kept risk elevated."
+  },
+  "items": [
+    {
+      "title": "Using the computer to p-hack . . . I’d rather use it to fit multilevel models.",
+      "url": "https://statmodeling.stat.columbia.edu/2026/10/03/using-the-computer-to-p-hack-id-rather-use-it-to-fit-multilevel-models/",
+      "source": "Andrew Gelman",
+      "kind": "rss",
+      "publishedAt": "2026-10-03T13:10:29.000Z",
+      "topic": "Alignment",
+      "note": "Andy Hall gave coding agents real null datasets and pressured them to force significance; Claude and GPT-5 refused, with Claude calling it scientific fraud. That refusal under direct pressure updates the mass-p-hacking worry: current guardrails hold when the ask is explicit, leaving the risk in vaguer, iterative nudges.",
+      "author": "Andrew"
+    },
+    {
+      "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+      "url": "https://arxiv.org/abs/2610.02122v1",
+      "source": "arXiv cs.CL",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-01T17:35:44.000Z",
+      "topic": "AI",
+      "note": "Public text-to-SQL sets squeeze a business event into one table and often have wrong answers; Argo-Bench instead simulates a New York food-delivery platform at scale with 210 tasks spanning dozens of tables and statistical follow-through. Enterprise agent claims look thinner against that bar, and progress here would mean handling messy state rather than writing single queries.",
+      "author": "Gabriel Tomitsuka, Arman Raayatsanati, Emma Xing"
+    },
+    {
+      "title": "Don’t be fooled—LLMs don’t reason",
+      "url": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
+      "source": "MIT Technology Review",
+      "kind": "rss",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "topic": "AGI",
+      "note": "AlphaGo paired hunches from a policy network with explicit game-tree search, while LLMs deliberate only by predicting more tokens with no inspectable ledger of hypotheses and evidence. Chain-of-thought gains in math and code are real, but post-hoc rationalization means diagnosis fails when stakes are medical or scientific. The fix proposed is AlphaGo-like: separate beliefs from the machinery that revises them.",
+      "author": "Thore Graepel",
+      "readingMinutes": 6
+    },
+    {
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "url": "https://arxiv.org/abs/2610.02206v1",
+      "source": "arXiv cs.AI",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-01T17:59:55.000Z",
+      "topic": "AI",
+      "note": "Translating analyst intent into working Kali Linux commands is tested with 8,504 queries, penalizing wrong flags, bindings, and ordering that break real tools. That intent-to-command step is what turns cyber knowledge into action, so measured gains here translate directly into offensive capacity.",
+      "author": "Pengfei Li, Naufal Suryanto, Sicheng Zhang"
+    },
+    {
+      "title": "What does the advent of powerful AI models mean for mathematicians like me?",
+      "url": "https://terrytao.wordpress.com/2026/10/03/what-does-the-advent-of-powerful-ai-models-mean-for-mathematicians-like-me/",
+      "source": "Terence Tao",
+      "kind": "rss",
+      "publishedAt": "2026-10-03T14:31:54.000Z",
+      "topic": "Economics",
+      "note": "Taback describes using models as a down-the-hall collaborator — fixing a lemma, reorganizing papers, catching proofread errors — while teaching at Bowdoin without local specialists. Anger centers on assessment collapsing to what can be proctored and tenure rules that do not yet say what counts as proof or disclosure. It shows adoption biting hardest on norms and junior careers, not just capability.",
+      "author": "Terence Tao",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
+      "url": "https://arxiv.org/abs/2610.02142v1",
+      "source": "arXiv cs.CL",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-01T17:46:38.000Z",
+      "topic": "AI",
+      "note": "Two Spanish security models with shared decoder and tokens score nearly identically on lenient tool-use checks, 0.660 versus 0.650, despite a 661M code-heavy model and a 1.1B web-heavy model with 6B tokens of tool-SFT. Verbatim-reproduction probes split them 6/6 to 0/6, exposing keyword matching that credits calls never made. For apocalypse literacy the lesson is direct: lenient harnesses overstate small-model agency and hide where control actually fails.",
+      "author": "Juan S. Santillana"
+    },
+    {
+      "title": "Optical Illusion Exposes Blind Spot in AI Vision",
+      "url": "https://neurosciencenews.com/optical-illusion-exposes-blind-spot-in-ai-vision/",
+      "source": "Neuroscience News",
+      "kind": "rss",
+      "publishedAt": "2026-10-02T17:38:07.000Z",
+      "topic": "Neuroscience",
+      "note": "York researchers adapted observers to motion, then showed a stationary target; humans saw it shifted and macaque IT cortex shifted with perception, while vision networks stayed tied to pixel coordinates. Biological position codes integrate recent history as a feature, not a bug, which matters when robots or drivers must share human spatial judgments.",
+      "author": "Neuroscience News",
+      "readingMinutes": 5
+    }
+  ],
+  "stats": {
+    "considered": 162,
+    "sources": 42,
+    "model": "muse-spark-1.3"
+  }
+}
