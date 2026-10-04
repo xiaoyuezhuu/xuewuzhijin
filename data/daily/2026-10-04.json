@@ -1,0 +1,50 @@
+{
+  "kind": "daily",
+  "date": "2026-10-04",
+  "slug": "2026-10-04",
+  "generatedAt": "2026-10-04T15:46:55.845Z",
+  "intro": "Agents look less reliable in production than demos suggest, even as models run anywhere.",
+  "pulse": {
+    "text": "Frontier agents still fail state checks more often than smooth traces suggest, which is why a 20-times repetition test drawing a 67% single-try ceiling is getting attention. Open-weights pressure continues from below, with 125B-class models now reported running on single gaming GPUs, while deployment discussion has shifted to practical guardrails like hard spend caps. Public mood is edgier after an OpenAI safety departure warning of broken culture, and researchers are focused less on raw scores than on whether results hold up repeatedly.",
+    "barometer": 70,
+    "reading": "Local 125B diffusion weighed against flaky agent reliability"
+  },
+  "items": [
+    {
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "topic": "Alignment",
+      "note": "Microsoft and Hugging Face ran 12 models through 507 business workflows 20 times each, scoring only final database state. The best model succeeds 67% of single tries, yet two-thirds of failures still looked clean on tool traces, with wrong field values in 78% of them. That gap reframes deployment from can-it-ever to can-it-always, and the harness is now runnable through Hugging Face.",
+      "readingMinutes": 13
+    },
+    {
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "url": "https://github.com/Niko1221/Strata",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-04T12:51:53.000Z",
+      "topic": "AI",
+      "note": "A community runtime loads a 125B Qwen3.8 variant into consumer RAM and runs it on 12GB+ RTX and Radeon cards, reporting 53-94 tokens/s generation on an RTX 5070 depending on quantization. The coding slice is claimed to retain 91% of the full model's SWE-bench Verified score while fitting 32GB RAM. Capable open models on gaming PCs shift control from hosted oversight to local copies.",
+      "author": "snehesht",
+      "readingMinutes": 7
+    },
+    {
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "publishedAt": "2026-10-03T23:34:02.000Z",
+      "topic": "Economics",
+      "note": "Coding agents make it trivial to deploy services that call paid APIs and storage, where a midnight email warning can trail thousands in runaway spend. AWS added pausable spend limits in September and Google added Spend Caps in July, but neither is yet default or universal. Making hard caps opt-out would turn a common agent failure mode from bankruptcy risk into an error message.",
+      "readingMinutes": 2
+    }
+  ],
+  "stats": {
+    "considered": 54,
+    "sources": 20,
+    "model": "muse-spark-1.3"
+  }
+}
