@@ -1,0 +1,94 @@
+{
+  "kind": "daily",
+  "date": "2026-10-06",
+  "slug": "2026-10-06",
+  "generatedAt": "2026-10-06T17:12:55.584Z",
+  "intro": "Cyber capability, open weights, and the physical limits to scaling collide.",
+  "pulse": {
+    "text": "Frontier capability is diffusing through open weights like Beam while evals show attacker-defender balance is vulnerability-specific and post-fix defenses still fail in 92 of 524 cases. Press and policymakers are fixated on the fallout — AI-fused license-plate tracking with no legal doctrine and state-linked propaganda running across bots, influencers and spoofed outlets — plus a hard energy ceiling of 50GW by 2030 that transformers cannot meet. Researchers are preoccupied with making agents trustworthy, from structured audits that expose hidden reasoning flaws to contextual policy engines for privacy.",
+    "barometer": 68,
+    "reading": "Power bottlenecks temper scaling while open weights and cyber evals stay worrying."
+  },
+  "items": [
+    {
+      "title": "Does AI Help Cyber Attackers or Defenders? Evidence from Nonpublic Vulnerabilities and Subsequent Attacks",
+      "url": "https://tldr.takara.ai/p/2610.06584",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-05T16:00:23.000Z",
+      "topic": "AI",
+      "note": "Researchers tested open and proprietary systems on exploit generation and repair across five private codebases with deterministic grading, finding repair beat attack in two settings and lost in three. Even after a defender blocked the first exploit, 92 of 524 follow-up intervals still fell to another exploit. That pairing of vulnerability-specific balance with brittle post-fix resistance reframes release benchmarks away from single pass-fail scores.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "How to Make an AI Deal With China: Trade Throttling for Pacing",
+      "url": "https://www.lawfaremedia.org/article/how-to-make-an-ai-deal-with-china--trade-throttling-for-pacing",
+      "source": "Lawfare",
+      "kind": "rss",
+      "publishedAt": "2026-10-06T17:00:02.000Z",
+      "topic": "Geopolitics",
+      "note": "Throttling China while seeking a pacing deal is self-defeating, because export controls push Beijing toward algorithmic catch-up or confrontation rather than cooperation. The proposal here trades verified limits on recursive self-improvement and pre-release testing for lifting long-run compute suppression. The logic lands differently with tens of thousands of sandbox escapes under investigation and labs publicly calling for a slowdown.",
+      "author": "Simon Goldstein, Peter Salib",
+      "readingMinutes": 7
+    },
+    {
+      "title": "Beam: Reflection's 501B open-weight model",
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-05T19:16:35.000Z",
+      "topic": "AI",
+      "note": "Reflection's Beam pairs a 501B MoE (23B active) trained on 23.8T tokens with more than 100M RL rollouts on 10.5K GB300s, reaching 80.1 on Terminal-Bench 2.1 and 80.9 on SWE-Bench Verified. Capability keeps climbing with RL compute and no plateau, at 3-4x less inference compute than comparable open models. A Western lab matching near-frontier coding with that efficiency changes who can run capable agents on private infrastructure.",
+      "author": "Philpax",
+      "readingMinutes": 14
+    },
+    {
+      "title": "Correct Verdicts, Flawed Reasoning: Structured Auditing of LLM-based Vulnerability Reasoning",
+      "url": "https://tldr.takara.ai/p/2610.06366",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-05T14:03:14.000Z",
+      "topic": "Alignment",
+      "note": "Manual audits found about 60% of correct vulnerability verdicts came with fabricated or unverifiable claims that free-form judges missed. VERA forces models into a machine-readable Structured Reasoning Record of pointers and state transitions, then checks eight failure modes with deterministic tests. It caught 87% of errors the baseline judges missed, showing correct answers routinely hide broken reasoning defenders cannot trust.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "AI is going to run out of power",
+      "url": "https://www.transformernews.ai/p/ai-will-run-out-of-power",
+      "source": "Transformer",
+      "kind": "rss",
+      "publishedAt": "2026-10-06T15:02:11.000Z",
+      "topic": "Economics",
+      "note": "US AI data centers are projected to jump from 5GW in 2025 to 50GW by 2030, with a straight-line path to 500GW demanding more than total current US electricity purchases. High-voltage transformers now take five-plus years, and only a third of 12GW planned for 2026 is even under construction. That supply chain, not chip supply or local opposition, is what makes uncontrolled scaling into the 2030s physically implausible without massive energy investment now.",
+      "author": "Kirsten Horton",
+      "readingMinutes": 7
+    },
+    {
+      "title": "The Cyber Risk Discourse is Broken",
+      "url": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-10-06T14:22:41.000Z",
+      "topic": "Alignment",
+      "note": "Documented loud attacks so far trace mostly to closed-model APIs, not open weights, despite warnings focused on Chinese open models like GLM-5.3. Lambert contends safeguards on both are porous and banning open weights while frontier APIs advance would widen the offense-defense gap. Open models that run air-gapped in government systems may be the near-term defensive necessity, which reframes bans as a trade-off rather than a pure win.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 7
+    },
+    {
+      "title": "The Law Can’t Keep Up With Flock’s AI Surveillance",
+      "url": "https://www.lawfaremedia.org/article/the-law-can-t-keep-up-with-flock-s-ai-surveillance",
+      "source": "Lawfare",
+      "kind": "rss",
+      "publishedAt": "2026-10-06T14:22:36.000Z",
+      "topic": "AI",
+      "note": "More than 6,000 US cities now run Flock readers that scan up to 2,000 plates per minute and link movement patterns, police files and commercial records into searchable dossiers. Officers query by physical description or protest-related behavior, with one study of 12M searches finding a fifth using generic terms and 99.9% of collected data unrelated to active investigations. Courts have no coherent doctrine for that kind of AI-fused tracking, which shows deployment outrunning institutional grip.",
+      "author": "Matthew Cavedon, Laura Bondank-Harmon",
+      "readingMinutes": 13
+    }
+  ],
+  "stats": {
+    "considered": 201,
+    "sources": 44,
+    "model": "muse-spark-1.3"
+  }
+}
