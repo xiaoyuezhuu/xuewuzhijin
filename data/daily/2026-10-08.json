@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "date": "2026-10-08",
+  "slug": "2026-10-08",
+  "generatedAt": "2026-10-08T17:54:26.121Z",
+  "intro": "Machine mathematics floods in faster than anyone can check it, and oversight tools struggle to keep up.",
+  "pulse": {
+    "text": "OpenAI's release of 722 manuscripts in 372 families claims proofs of the Unique Games Conjecture, L=BPL and sub-n log n multiplication with Lean certificates almost no one has read, and three withdrawals already logged in its history file. Mathematicians split between building Hexagon to house machine-generated results and the Association for Human Mathematics urging a boycott, while press tallies call it 81% of three years of discovery and Lawfare dissects the DOJ calling US training fair use and Chinese distillation malicious. The research conversation is about checking: attribution controls that erase BehaviorTrace signals, model organisms whose auditability tracks capability preservation, and Bengio telling frontier staff to leave for safety-first nonprofits like LawZero.",
+    "barometer": 71,
+    "reading": "372 AI math proofs no human yet understands, three already withdrawn."
+  },
+  "items": [
+    {
+      "title": "The Mathocalypse",
+      "url": "https://scottaaronson.blog/?p=10169",
+      "source": "Scott Aaronson",
+      "kind": "rss",
+      "publishedAt": "2026-10-07T18:57:26.000Z",
+      "topic": "AI",
+      "note": "Aaronson relays first-night reports on OpenAI's 372-family math dump, including a Lean-checked proof of the Unique Games Conjecture built on a strange recursive code no human has yet digested. His wife Dana Moshkovitz describes psychedelic writing, irrelevant citations, and soundness arguments scattered across the paper. The inventory — L=BPL, sub-n log n multiplication, positive unitary synthesis — shows verification scaling far faster than comprehension, which is exactly the gap the premise worries about.",
+      "author": "Scott",
+      "readingMinutes": 12
+    },
+    {
+      "title": "How to train your model organism",
+      "url": "https://tldr.takara.ai/p/2610.10203",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-07T15:02:57.000Z",
+      "topic": "Alignment",
+      "note": "Standard backdoor and sycophancy organisms lose chat quality and chain-of-thought naturalness, and a logit-lens readout tracks those degradations rather than the method itself. Merging-based multi-objective training plus DPO over supervised fine-tuning better preserves capabilities on a new clinical-bias suite. For anyone using organisms to vet interpretability tools, validation scores now predict whether an audit will succeed.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "source": "Microsoft Research",
+      "kind": "rss",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "topic": "AI",
+      "note": "Microsoft Research Asia's 3,500-line control plane lets the deployed harness — mini-SWE-agent, OpenHands, Claude Code and the like — participate directly in RL via an LLM proxy and Kubernetes jobs. The worked example lifts Qwen3.5-9B from 41.8% to 56.4% Pass@1 on SWE-bench Verified with about 6,000 samples. Training the artifact that actually ships narrows the gap between lab numbers and deployed behavior.",
+      "author": "Zhiyuan He, Yuqing Yang",
+      "readingMinutes": 6
+    },
+    {
+      "title": "Which Rollout Taught It That? BehaviorTrace and the Limits of Training-Data Attribution in Online RL",
+      "url": "https://arxiv.org/abs/2610.10422v1",
+      "source": "arXiv cs.LG",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-07T17:01:37.000Z",
+      "topic": "Alignment",
+      "note": "With a planted behavior in Qwen2.5-1.5B under GRPO and full-gradient sketching, ranking by raw gradient magnitude explains much of what looks like successful rollout attribution. Controls for fluency, headroom, and seed variation collapse the signal further. The harness gives the field a way to test attribution claims before trusting them to audit online RL.",
+      "author": "Amit Nautiyal"
+    },
+    {
+      "title": "The AI Model Distillation Paradox",
+      "url": "https://www.lawfaremedia.org/article/the-ai-model-distillation-paradox",
+      "source": "Lawfare",
+      "kind": "rss",
+      "publishedAt": "2026-10-08T14:08:37.000Z",
+      "topic": "Geopolitics",
+      "note": "Klaassen contrasts DOJ's 'exceedingly transformative' fair-use defense of ingesting copyrighted text with NSA/CISA/FBI charges that DeepSeek, Moonshot, Alibaba and others ran industrial-scale distillation of Claude, GPT, Gemini and Grok since 2024. Training and distillation use the same mimicry mechanics, leaving only the identity of the victim to do legal work. That asymmetry now frames both copyright doctrine and US-China model competition.",
+      "author": "Lisa Klaassen",
+      "readingMinutes": 15
+    },
+    {
+      "title": "Comprehension Audits to Mitigate Risks from Automated AI Research",
+      "url": "https://tldr.takara.ai/p/2610.10064",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-07T13:30:47.000Z",
+      "topic": "Alignment",
+      "note": "No frontier assurance regime currently requires humans to demonstrate they understand the code AI wrote as a condition to keep building. The proposal makes responsible engineers explain contributions to independent auditors, with graded reports and stop-work on failure, motivated by falling review-comment rates in open-source fleets. It turns 'human oversight' from a slogan into a testable gate for automated research.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Hexagon",
+      "url": "https://terrytao.wordpress.com/2026/10/06/hexagon/",
+      "source": "Terence Tao",
+      "kind": "rss",
+      "publishedAt": "2026-10-06T21:50:11.000Z",
+      "topic": "AI",
+      "note": "Ben Antieau announces a Delaware-nonprofit repository built in August to house LLM-assisted math that arXiv won't take, explicitly allowing fully machine-generated submissions with no claimed human understanding. Rate limits start at one per day, with links to Lean, mathlib and proof checkers rather than a formalization requirement. If the OpenAI flood persists, decisions here determine what counts as citable mathematics.",
+      "author": "Terence Tao",
+      "readingMinutes": 5
+    }
+  ],
+  "stats": {
+    "considered": 279,
+    "sources": 52,
+    "model": "muse-spark-1.3"
+  }
+}
