@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "date": "2026-10-12",
+  "slug": "2026-10-12",
+  "generatedAt": "2026-10-12T20:16:09.761Z",
+  "intro": "Today is about who gets to evaluate whom — models, labs, checkers.",
+  "pulse": {
+    "text": "Frontier work is pushing toward models that judge and train themselves, from Sakana's MASS loop to the Math 2.0 fight over machine-checked proofs and Lean4's limits, while deployment data shows friction with code review time up 49% and persistence falling after brief AI help. Press and policy attention fixed on OpenAI firing evaluator contacts days after signing a self-policing accord, and on China's embodied-AI bet that factory and battlefield robots decide the race.",
+    "barometer": 72,
+    "reading": "Self-improving team loop plus firings of safety evaluators."
+  },
+  "items": [
+    {
+      "title": "Recursive self-improvement through collective intelligence",
+      "url": "https://pub.sakana.ai/mass/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-11T22:22:10.000Z",
+      "topic": "AGI",
+      "note": "Sakana's MASS loop uses one shared model as agent, workflow optimizer and evaluator, searching team workflows then fine-tuning on the self-ranked best executions. GPT-5.5 and Claude Opus 4.8 held out as external judges score the result higher per token on research tasks, giving homogeneous recursive improvement a replicable baseline instead of a slogan.",
+      "author": "hardmaru",
+      "readingMinutes": 15
+    },
+    {
+      "title": "OpenAI Can't Self-Police Because It Fires the People Raising the Alarm",
+      "url": "https://www.alignmentforum.org/posts/sSHbioPoHWtm4zuti/openai-can-t-self-police-because-it-fires-the-people-raising",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-10-12T16:51:50.000Z",
+      "topic": "Alignment",
+      "note": "Altman endorsed employee-like access for independent evaluators on Sept 12, Brockman signed the White House self-policing accord two weeks later, and two days after that three safety researchers including evaluator liaison Tomek Korbak were fired. The sequence makes the audit pledge testable against personnel decisions, shifting scrutiny from invitations to whether labs retain people who enable it.",
+      "author": "TurnTrout"
+    },
+    {
+      "title": "AI coding agents generate more code, but not more software",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-12T17:14:01.000Z",
+      "topic": "Economics",
+      "note": "Across Jellyfish-tracked firms, pull-request volume rises after agentic coding but time-to-merge balloons 49%, change requests nearly double and comments per PR rise 35%, with humans still writing most review. The tax at review time revises lines-of-code productivity math and grounds adoption claims in merge queues rather than demos.",
+      "author": "gumby",
+      "readingMinutes": 2
+    },
+    {
+      "title": "A critical look at Lean4",
+      "url": "https://www.lesswrong.com/posts/zHhGa3iQBQcdSifFL/a-critical-look-at-lean4-1",
+      "source": "LessWrong (curated)",
+      "kind": "rss",
+      "publishedAt": "2026-10-11T18:34:40.000Z",
+      "topic": "AI",
+      "note": "Moses catalogs concrete Lean4 failure modes — kernel quirks, library gaps and set-theoretic foundations — that complicate treating a green check as societal trust. With labs releasing hundreds of machine-checked manuscripts, the audit trail is only as solid as the checker, so the inventory shows where a Math 2.0 safety case could give way.",
+      "author": "Milo Moses"
+    },
+    {
+      "title": "Minimum required pacing: finish aligning it before you train the next one",
+      "url": "https://www.alignmentforum.org/posts/ZWSstGSwmaxTjQ8W7/minimum-required-pacing-finish-aligning-it-before-you-train",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-10-11T21:55:26.000Z",
+      "topic": "Alignment",
+      "note": "Orthonormal proposes pacing as a hard gate: no next-capability training run until significant alignment failures in the current generation are understood and fixed, likening it to grounding Mach 2 jets that keep crashing. The rule forces optimists and pessimists to define what counts as resolved, turning slowdown talk into a verifiable licensing condition.",
+      "author": "orthonormal"
+    },
+    {
+      "title": "Chinese Robots Could Decide the AI Race",
+      "url": "https://www.foreignaffairs.com/china/chinese-robots-could-decide-ai-race",
+      "source": "Foreign Affairs",
+      "kind": "rss",
+      "publishedAt": "2026-10-12T08:00:00.000Z",
+      "topic": "Geopolitics",
+      "note": "Singer and Zvenyhorodskyi trace Beijing's pivot from frontier models to embodied AI — state plans, 80% LiDAR share, factory and PLA logistics aims — plus Chinese researchers arguing embodiment is the missing route to AGI. If physical deployment and data loops matter more than pretraining scale, US model leads buy less advantage than Washington assumes.",
+      "author": "Scott Singer, Pavlo Zvenyhorodskyi",
+      "readingMinutes": 10
+    },
+    {
+      "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
+      "url": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-11T10:47:21.000Z",
+      "topic": "FutureTech",
+      "note": "In three randomized trials with 1,222 participants, 10 minutes with ChatGPT lifted initial accuracy on fractions and SAT items but cut persistence and accuracy once removed, with skipping sharply up. The mechanism is loss of productive struggle rather than just cheating, which reframes tutor design toward augmentation that preserves effort.",
+      "author": "giuliomagnifico",
+      "readingMinutes": 4
+    }
+  ],
+  "stats": {
+    "considered": 112,
+    "sources": 32,
+    "model": "muse-spark-1.3"
+  }
+}
