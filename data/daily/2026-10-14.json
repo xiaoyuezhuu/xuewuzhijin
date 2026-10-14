@@ -1,0 +1,89 @@
+{
+  "kind": "daily",
+  "date": "2026-10-14",
+  "slug": "2026-10-14",
+  "generatedAt": "2026-10-14T15:50:14.243Z",
+  "intro": "Frontier capabilities keep jumping in math and code while safety measurement struggles to catch up.",
+  "pulse": {
+    "text": "Frontier labs are reporting step-changes rather than increments: Anthropic's merge rate jumped twelvefold since May and OpenAI's 722-paper math dump claims records that stood for decades. Press coverage oscillates between excitement over Riemann-adjacent progress and unease about Gemini 4 Argon, 10,000-agent multi-day runs, and IoT self-replication evals, while researchers grind on why oversight still fails — state-blind guardrails catching 9%, factuality tuning not beating base models, and judges mislocating agent failures.",
+    "barometer": 75,
+    "reading": "Math records broken and 12x code velocity with safety checks still blind."
+  },
+  "items": [
+    {
+      "title": "Redesigning source control at Anthropic",
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "publishedAt": "2026-10-13T23:00:06.000Z",
+      "topic": "AI",
+      "note": "In May Anthropic merged about 2,500 changes a day; by September it was over 30,000, with 25 million checkouts a day pushing Git past breaking. A seven-person team rebuilt source control as Scion in five months, noting Claude is now by far the heaviest user and offline support no longer matters. That twelvefold velocity in four months is a concrete internal measure of what agentic coding does inside a frontier lab.",
+      "readingMinutes": 2
+    },
+    {
+      "title": "LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents",
+      "url": "https://tldr.takara.ai/p/2610.17685",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-13T04:07:44.000Z",
+      "topic": "Alignment",
+      "note": "Paired trajectories share the same final action but differ in earlier workflow state, forcing evaluation of context rather than the act itself. Action-level checks catch only 9% of violations while state-aware checks catch 96%, and standard guardrails miss the risk unless pointed at workflow state. Enterprise deployment is therefore flying with a safety instrument that reads safe when the sequence is not.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "OpenAI just changed math forever. Exactly how, no one yet knows",
+      "url": "https://www.science.org/content/article/openai-just-changed-math-forever-exactly-how-no-one-yet-knows",
+      "source": "Science News",
+      "kind": "rss",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
+      "topic": "AGI",
+      "note": "OpenAI released 722 machine-generated mathematics papers at once, including claimed advances beating long-standing records for 3SUM and all-pairs shortest path. Mathematicians quoted so far split between decimation and invigoration because nobody has yet validated the corpus. The volume alone forces a new question of what proof-checking capacity the field can still supply.",
+      "author": "Tom Howarth"
+    },
+    {
+      "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+      "url": "https://tldr.takara.ai/p/2610.18449",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-13T14:18:56.000Z",
+      "topic": "AI",
+      "note": "Six budgeted design-build-test-learn campaigns in biology, chemistry and materials ask agents to choose batches of experiments and then deliver a predictive model. The best of eight agent-model setups succeeds in 67% of trials, while the hardest campaign clears only 3 of 24 attempts, with discovery and learning failures separating cleanly. That split between finding good designs and ranking unseen ones gives science-agent benchmarks a two-dimensional score that single success rates hid.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Do Factuality Methods Make LLMs More Factual? Reproducibility and Fair Comparison",
+      "url": "https://tldr.takara.ai/p/2610.18415",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-13T13:54:51.000Z",
+      "topic": "Alignment",
+      "note": "Five factuality alignment methods spanning PPO, GRPO, Dr. GRPO, DPO and KTO were reimplemented on a common base, data and judges. None reproduces fully and none beats the base model significantly, with rewards tracking format, length or brevity instead of truthfulness. Relevance and verification turn out to be measurement problems first, which resets expectations for what current factuality tuning actually buys.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Executable Prefix Values for Locating Agent Failures",
+      "url": "https://tldr.takara.ai/p/2610.17633",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-13T03:00:35.000Z",
+      "topic": "AI",
+      "note": "Restarting frozen open-weight agents from reconstructed intermediate states on 150 SWE-bench Verified tasks yields a success-probability curve with a certified point of no return. Frontier judges agree on the exact failure step in only 21 of 57 cases and flag errors in successful runs, while two-thirds of labeled mistakes show no drop in success probability. Restarting at the measured point lifts expected success from 0.44 to 0.57, where restarting at judge labels does not help.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "url": "https://arxiv.org/abs/2610.18868v1",
+      "source": "arXiv cs.AI",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-13T17:59:51.000Z",
+      "topic": "AGI",
+      "note": "Tev-Gym supplies 1,170 verified task environments across seven domains with dense, progressive rewards for training long-horizon agents. The design targets the two bottlenecks that hold open models back: scarce verifiable long tasks and sparse rewards that give little learning signal. If the recipe transfers, hours-to-days autonomy stops being a data excuse and becomes a training-run question.",
+      "author": "Wenbo Hu, Shraman Pramanick, Krishna Kumar Singh"
+    }
+  ],
+  "stats": {
+    "considered": 257,
+    "sources": 48,
+    "model": "muse-spark-1.3"
+  }
+}
