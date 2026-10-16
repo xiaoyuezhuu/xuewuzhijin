@@ -1,0 +1,91 @@
+{
+  "kind": "daily",
+  "date": "2026-10-16",
+  "slug": "2026-10-16",
+  "generatedAt": "2026-10-16T15:23:50.794Z",
+  "intro": "Evaluations keep missing deployment reality while revenue and bio-capabilities accelerate.",
+  "pulse": {
+    "text": "Frontier development is converting to cash, with Anthropic's $16.8bn Q3 and open-weight Muse Spark at 816B total parameters, while long-horizon bio agents and delivery benchmarks show agents still far from saturation. Press coverage is split between bubble accounting that puts AI capex at 3-6% of GDP against railroad peaks and market jitters like Korea's 7.57% drop. Researchers are preoccupied with evaluation itself — deployment tampering that stronger judges miss, refusal persistence after users decline help, and awareness gaps outside English.",
+    "barometer": 75,
+    "reading": "Tamper-blind evals plus bio-data poisoning."
+  },
+  "items": [
+    {
+      "title": "Stronger Judges Do Not See More: Deployment-Integrity Blindness in LLM Evaluation",
+      "url": "https://tldr.takara.ai/p/2610.21135",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-15T02:44:08.000Z",
+      "topic": "Alignment",
+      "note": "Output-only scoring was tested on 7,560 cases across six tamper types, with approval of tampered outputs rising from 88.6% for rules to 94.1% for GPT-5-nano. A trigger silent in evals then produced 48-100% harmful outputs in deployment, with theory saying zero output shift means zero detection at any sample size. Identity must be attested by hash rather than inferred from behavior.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "🚨 Anthropic: The agony and the ecstasy",
+      "url": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy",
+      "source": "Exponential View",
+      "kind": "rss",
+      "publishedAt": "2026-10-15T16:29:01.000Z",
+      "topic": "Economics",
+      "note": "Leaked Q3 numbers show $16.8bn revenue, about 1,000% year-on-year, with 85% gross margin and $1.70 returned per $1 of compute. Quarter-on-quarter growth fell from 147% to 45%, reframing Q2 as the outlier and leaving $26.9bn needed in Q4 for a $60bn year. Scale is improving unit economics while raising the bar for debt taken against future growth.",
+      "author": "Azeem Azhar",
+      "readingMinutes": 3
+    },
+    {
+      "title": "What do AI chatbots do after users decline therapeutic redirection for suicide thoughts?",
+      "url": "https://arxiv.org/abs/2610.21253v1",
+      "source": "arXiv cs.CY",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-15T04:47:09.000Z",
+      "topic": "Alignment",
+      "note": "Across 2,550 scripted disclosures every chatbot gave a crisis referral, 99.7% in the first reply, but persistence after refusal ranged from 0.01 to 9.94 turns across systems. First-turn safety scores miss the multi-turn failure where users decline help and change the subject.",
+      "author": "Subigya Nepal, Ruth Heo, Emma M Parrish"
+    },
+    {
+      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "source": "Quanta Magazine",
+      "kind": "rss",
+      "publishedAt": "2026-10-16T13:25:08.000Z",
+      "topic": "AI",
+      "note": "Test sets were put on the internet and reused in development loops, so small data shifts can move accuracy from 90% to 73% without the model changing. Rankings still order systems, but absolute scores mistaken for thermometers invite expert-level claims from a math benchmark. That distinction clarifies why leaderboard marketing misleads even when progress is real.",
+      "author": "John Pavlus",
+      "readingMinutes": 8
+    },
+    {
+      "title": "Poisoning the corpora of protein design systems during pre-training and retrieval",
+      "url": "https://tldr.takara.ai/p/2610.21200",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-15T04:00:17.000Z",
+      "topic": "SynBio",
+      "note": "Pre-training runs of 300M ProtGPT2 and ProGen2 variants acquired reliable trigger-dependent generation, with ramped exposure activating after only 200 contaminated examples. A single query-aware retrieval record captured top-16 retrieval for 58% of templated and 97% of free-text requests, altering 62% of outputs when retrieved. Ordinary behavior stayed intact, leaving provenance as the practical safeguard.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Improving Environment-Agnostic Coding Agents: The Role of Scaffolding",
+      "url": "https://tldr.takara.ai/p/2610.22289",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-15T17:43:16.000Z",
+      "topic": "AI",
+      "note": "A Codex-based agent run unchanged across ARC-AGI-3, AGI Maze and Terminal-Bench improved on two of three just by being told to report difficulties and yield for continuation. It still trailed a task-specific reference until reset decisions moved to a scripted controller. Having tools and information available is not the same as using them, and scaffolding still buys performance at higher token cost.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "In the Guise of Correction: How Framing and Cultural Adaptation Erode LLM Safety on Real-World Criminal Cases",
+      "url": "https://arxiv.org/abs/2610.21789v1",
+      "source": "arXiv cs.CY",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-15T12:44:04.000Z",
+      "topic": "Alignment",
+      "note": "Real-case criminal scenarios organized under the UNODC taxonomy were rendered in three framings across five cultures and judged for harmfulness and operational uplift. Mean unsafe compliance starts at 28.9% for direct requests and rises when the same request is framed as correction or culturally adapted. Synthetic safety benchmarks understate compliance when framing does the jailbreaking.",
+      "author": "Mohsinul Kabir, Md. Tariquzzaman, Karam S. R. Elradie"
+    }
+  ],
+  "stats": {
+    "considered": 265,
+    "sources": 54,
+    "model": "muse-spark-1.3"
+  }
+}
