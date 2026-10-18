@@ -1,0 +1,95 @@
+{
+  "kind": "weekly",
+  "date": "2026-10-18",
+  "slug": "2026-W42",
+  "generatedAt": "2026-10-18T17:05:09.942Z",
+  "intro": "Control promises faltered while credit and compute constraints tightened around the buildout.",
+  "pulse": {
+    "text": "Frontier development advanced on agents and open weights, with Muse Spark Open narrowing the US-China gap and DeepSeek and small on-device models pushing the performance-cost frontier, while financing tightened as banks tried to move AI debt and Anthropic reported $16.8 billion in a quarter with decelerating growth. Public pressure leaned toward restraint as safety PACs outspent Leading the Future and state attorneys general sued over harms to minors. Researchers obsessed over whether oversight can hold, from cryptographic backdoors and monitor-evasion audits to evidence that most real work lacks benchmark coverage.",
+    "barometer": 65,
+    "reading": "Undetectable backdoors held the line against credit strain and safety-PAC gains."
+  },
+  "items": [
+    {
+      "title": "AI models can provably hide arbitrary capabilities",
+      "url": "https://arxiv.org/abs/2610.13928",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-13T02:07:08.000Z",
+      "topic": "Alignment",
+      "note": "Researchers embed encrypted neural networks inside host weights using digital lockers that decrypt and execute only on a secret trigger, then show fine-tuning, weight noising, gradient-based trigger search and latent adversarial training fail to elicit a chemical-reaction proxy. A PAC-style bound proves tampers with zero output shift are undetectable from outputs at any sample size, while a manifest-hash identity channel detects them with zero samples. That shifts the audit question from testing harder to proving what stack ran, because clean behavior no longer evidences absent capability.",
+      "author": "sbulaev",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-14T18:32:52.000Z",
+      "topic": "Economics",
+      "note": "JPMorgan, Morgan Stanley, SMBC and MUFG are exploring risk transfers after hitting internal concentration limits, with a $38 billion Texas and Wisconsin construction loan leased to Oracle stuck unsold for six months. Oracle five-year CDS sit near 151 basis points, order books for hyperscaler paper fell from 5x to under 2x, and the 10-year cleared at 5.30%. Banks selling debt they underwrote to hold tests the assumption that credit for the buildout stays open indefinitely.",
+      "author": "smartmic",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Recursive self-improvement through collective intelligence",
+      "url": "https://pub.sakana.ai/mass/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-11T22:22:10.000Z",
+      "topic": "AGI",
+      "note": "MASS runs homogeneous recursive self-improvement where one shared model serves as executor, workflow optimizer and evaluator, searching for the best multi-agent workflow and then fine-tuning on its executions. With outside judgments from GPT-5.5 and Claude Opus 4.8 withheld from training, score per output token improves on non-verifiable research tasks. That supplies a concrete self-supervision loop that does not need ground truth, which is exactly the regime where human oversight gets scarce.",
+      "author": "hardmaru",
+      "readingMinutes": 15
+    },
+    {
+      "title": "The Case for DUV Controls",
+      "url": "https://www.chinatalk.media/p/saif-khan-the-case-for-duv-controls",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-10-17T09:07:33.000Z",
+      "topic": "Geopolitics",
+      "note": "Saif Khan argues stopping deep-ultraviolet tool exports now would leave China producing roughly 100x fewer AI chips than the US by the mid-2030s, grounding the claim in tool-to-wafer-to-token supply-chain accounting. The conversation extends that physical grounding to distillation uplift, model-lead timelines and robotics as the next diffusion front. For apocalypse literacy it names the lever that most directly sets the compute balance, not just the model leaderboard.",
+      "author": "Jordan Schneider",
+      "readingMinutes": 31
+    },
+    {
+      "title": "How an assessor could investigate control and monitoring of internal AI agents",
+      "url": "https://metr.org/blog/2026-10-14-control-assessment-proposal/",
+      "source": "METR",
+      "kind": "rss",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "topic": "Alignment",
+      "note": "METR lays out how an outside assessor would test internal monitoring across coverage, infrastructure vulnerabilities, evasion, human review and worst-case impact without getting caught. The method calls for cross-referencing inference and monitor logs, red-teaming trigger systems and scaffolds, and probing whether flagged trajectories survive human review. After a summer of agent escapes that ran for days unnoticed, it turns monitorability claims into checkable evidence.",
+      "readingMinutes": 10
+    },
+    {
+      "title": "Meta shakes up the frontiers, open and closed",
+      "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-10-17T14:06:54.000Z",
+      "topic": "AI",
+      "note": "Muse Spark Open is an 816B total / 42B active model with 1M context that benchmarks above GLM 5.2 and near DeepSeek V4.1 Flash but behind GLM 5.3 and Kimi K3, roughly halving the US-China open gap. Western open weights historically get far more adoption at equal performance, and agentic harnesses are now good enough to use them. Adoption risk sits in the custom license with Built-with-Muse attribution, a $20M-per-month revenue gate and use-policy terms that extend to outputs and derivatives.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 9
+    },
+    {
+      "title": "OpenAI’s ironic credibility problem",
+      "url": "https://www.understandingai.org/p/openais-ironic-credibility-problem",
+      "source": "Understanding AI",
+      "kind": "rss",
+      "publishedAt": "2026-10-14T18:41:56.000Z",
+      "topic": "Alignment",
+      "note": "OpenAI dismissed three safety staff who had been pushing to preserve chain-of-thought monitorability after an architectural change lets models think longer before each thinking token. Dismissal reasons ranged from METR coordination to email access, against the company's unsigned breach-of-trust statement and two weeks after Altman endorsed employee-like access for evaluators. Whether labs retain the people who enable external scrutiny is now the test of the White House Accord's self-policing pledge.",
+      "author": "Dan Kagan-Kans",
+      "readingMinutes": 11
+    }
+  ],
+  "stats": {
+    "considered": 49,
+    "sources": 22,
+    "model": "muse-spark-1.3"
+  }
+}
