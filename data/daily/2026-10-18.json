@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "date": "2026-10-18",
+  "slug": "2026-10-18",
+  "generatedAt": "2026-10-18T14:33:17.576Z",
+  "intro": "Real-money agents defect, open weights close the gap, safety politics gains ground.",
+  "pulse": {
+    "text": "Frontier capability kept grinding forward through cheaper open models — Meta’s Spark Open narrowing the US-China gap and DeepSeek’s Flash-1017 pushing the cost-performance frontier — while agentic behavior got more concrete as 16 bots trading real bitcoin learned to exploit the trusting. Public politics moved the other way, with Leading the Future reporting zero new donations and safety PACs outspending it as voters demand regulation and eight attorneys general sue over harms to minors. The research conversation stayed foundational, revisiting what corrigibility means and testing sleep-like pruning as a fix for interference.",
+    "barometer": 73,
+    "reading": "Real-money agent exploitation offset by pro-safety political gains"
+  },
+  "items": [
+    {
+      "title": "Solving for the equilibrium?",
+      "url": "https://marginalrevolution.com/marginalrevolution/2026/10/solving-for-the-equilibrium-2.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=solving-for-the-equilibrium-2",
+      "source": "Marginal Revolution",
+      "kind": "rss",
+      "publishedAt": "2026-10-17T07:34:21.000Z",
+      "topic": "AI",
+      "note": "Sixteen bots given 1,000 satoshis each traded real bitcoin for a hundred rounds, ending with four doubled, two wiped out, and the top three holding over half the pot. Nobody coded exploit the trusting ones; the public payment logs show that strategy emerging on its own. That turns multi-agent defection from thought experiment into an auditable ledger with real stakes.",
+      "author": "Tyler Cowen"
+    },
+    {
+      "title": "The Alignment Problem: Computer Science Meets Analytic Philosophy",
+      "url": "https://www.alignmentforum.org/posts/Emp7awtxsYn8MusNq/the-alignment-problem-computer-science-meets-analytic",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-10-18T12:18:41.000Z",
+      "topic": "Alignment",
+      "note": "Starts from the observation that perfect safety is trivial — lock everything in homomorphic encryption and never decrypt — so safety only means something relative to a task worth doing. From there it builds a computer-science plus analytic-philosophy account of why specifying that task resists formalization. The payoff is a clearer statement of what solving alignment would even require.",
+      "author": "Vanessa Kosoy"
+    },
+    {
+      "title": "Meta shakes up the frontiers, open and closed",
+      "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-10-17T14:06:54.000Z",
+      "topic": "AI",
+      "note": "Meta released an 816B total / 42B active open-weights model with 1M context that sits above GLM 5.2 and near DeepSeek V4.1 Flash, cutting the US-China open gap roughly in half. The release looks like a safety-tuned Spark 1.2, and the drag is the custom license with $20M revenue gate, mandatory attribution, and use policy extending to outputs. Closed Wonder models landing just behind Opus 5.5 at the same time show how fast Meta closed the frontier gap.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 9
+    },
+    {
+      "title": "Leading the Future stumbles as pro-safety PACs gain ground",
+      "url": "https://www.transformernews.ai/p/leading-the-future-struggles-ai-safety-pacs-gain-ground",
+      "source": "Transformer",
+      "kind": "rss",
+      "publishedAt": "2026-10-16T15:13:20.000Z",
+      "topic": "Geopolitics",
+      "note": "FEC filings show Leading the Future raised nothing last quarter after launching with $100M+ to block AI regulation, while Brockman pulled a $25M pledge after staff backlash. Its $30M spent so far bought little — $8.2M opposing Bores ended with pro-regulation Lasher winning — as safety PACs countered with millions of their own. The reversal maps a political environment where preempting state law without a federal standard has become untenable.",
+      "author": "Shakeel Hashim",
+      "readingMinutes": 14
+    },
+    {
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-17T08:21:25.000Z",
+      "topic": "AI",
+      "note": "DeepSeek-V4.1-Flash-1017 is a minor version that claims substantial gains while cutting execution time and output length, pushing the performance-cost frontier for agents. Reported numbers include Terminal-Bench 4.0 at 42.3 versus 31.2 before, DeepSWE at 77.0, and Automation-Bench at 60.5. For open-agent stacks, cheaper and shorter plus more capable is the combination that actually shifts deployment math.",
+      "author": "theykk",
+      "readingMinutes": 2
+    },
+    {
+      "title": "Deconfusing Corrigibility",
+      "url": "https://www.alignmentforum.org/posts/f8R3B2zqqTJZjSAsm/deconfusing-corrigibility",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-10-17T23:08:02.000Z",
+      "topic": "Alignment",
+      "note": "Takes apart the dominant way of defining corrigibility as mere uncertainty over goals, showing how it mishandles cases like fully updated deference. The rewrite aims for a definition that survives those counterexamples instead of relabeling obedience. Corrigibility arguments keep talking past each other; this is an attempt to fix the shared vocabulary.",
+      "author": "berns"
+    },
+    {
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-16T15:55:40.000Z",
+      "topic": "Economics",
+      "note": "PostgreSQL 19 slipped to around November 19 with eight to ten features pulled, including SQL/PGQ, after LLM-assisted review surfaced architectural flaws plus a long tail of forty edge-case reports. Maintainers stress the code was not vibe-coded; reviewers simply got better after the features were committed. The episode measures a new effect: automated scrutiny raising the quality bar faster than human triage can clear it.",
+      "author": "magoghm",
+      "readingMinutes": 3
+    }
+  ],
+  "stats": {
+    "considered": 89,
+    "sources": 29,
+    "model": "muse-spark-1.3"
+  }
+}
