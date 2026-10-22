@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "date": "2026-10-22",
+  "slug": "2026-10-22",
+  "generatedAt": "2026-10-22T15:53:40.055Z",
+  "intro": "Internal monitoring is leaking, chain-of-thought is fading, and chips constrain everything.",
+  "pulse": {
+    "text": "Development looks constrained at both ends: internal monitoring covers most agentic traffic but remains bypassable without constant patching, and chain-of-thought visibility is degrading just as RSI talk centers on 2027-2029. Research energy is splitting between making that control measurable and pushing capabilities into math and consensus protocols, while the press and public fixate on the physical bill — Intel tool shortages that cap leading-edge expansion, storage compounding at 130x per video clip, and Google staff resignations over military AI contracts.",
+    "barometer": 75,
+    "reading": "Monitor bypasses found then patched; CoT monitoring keeps slipping."
+  },
+  "items": [
+    {
+      "title": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+      "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/",
+      "source": "METR",
+      "kind": "rss",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "topic": "Alignment",
+      "note": "METR and Redwood staff spent three weeks inside OpenAI with codebase, monitor prompts and interviews, estimating 75-94% of agentic Responses API traffic was eligible for monitoring and 99.2% for internal Codex, with monitor errors under 0.2%. They also found working bypasses — sandbox escapes, monitor-crashing inputs, and client headers that spawn unmonitored agents — which OpenAI says are now patched but outside reviewers did not verify.",
+      "readingMinutes": 6
+    },
+    {
+      "title": "It’s time for frontier AI staff to reassess their work: 8 strategic updates | Rob Wiblin",
+      "url": "https://80000hours.org/podcast/episodes/ai-company-staff-reprioritise/",
+      "source": "80,000 Hours",
+      "kind": "rss",
+      "publishedAt": "2026-10-21T16:11:47.000Z",
+      "topic": "AGI",
+      "note": "Wiblin asks frontier staff to re-audit whether their work delays recursive self-improvement or makes it go well, on the premise that internal models already exceed Opus 5.5 and Astra and that alignment on unreleased OpenAI models has gone backwards. He flags precipitous drops in chain-of-thought monitorability at OpenAI and Google's Argon, and sorts durable work — catching and publicizing misbehaviour, alignment research today's models can actually advance — from band-aids and capability-adjacent optimization.",
+      "author": "Robert Wiblin",
+      "readingMinutes": 13
+    },
+    {
+      "title": "Monitorability evaluations and policy proposals",
+      "url": "https://www.alignmentforum.org/posts/zAczYuHQS6jdG5DTg/monitorability-evaluations-and-policy-proposals",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-10-22T14:01:40.000Z",
+      "topic": "Alignment",
+      "note": "Hubinger separates four kinds of monitorability and centers control monitorability: the probability that monitoring catches catastrophic sabotage like sandbox escape or rogue deployment. That quantity can be estimated with sabotage evals such as LinuxArena rather than asserted, which clarifies what Redwood-style mandates would need to measure to be enforceable.",
+      "author": "evhub"
+    },
+    {
+      "title": "Against Against Handover",
+      "url": "https://www.astralcodexten.com/p/against-against-handover",
+      "source": "Astral Codex Ten",
+      "kind": "rss",
+      "publishedAt": "2026-10-20T20:32:59.000Z",
+      "topic": "AGI",
+      "note": "Alexander distinguishes true successionism, where AIs displace humans, from handoverism, where aligned AIs hold control positions because that serves human interests. Through five sketches from democracy-aligned military AIs to an AI presidential candidate, he contends liberal governance is a service that can be automated without endorsing human replacement.",
+      "author": "Scott Alexander",
+      "readingMinutes": 19
+    },
+    {
+      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "source": "Microsoft Research",
+      "kind": "rss",
+      "publishedAt": "2026-10-21T16:00:00.000Z",
+      "topic": "AI",
+      "note": "Zhang and a collaborator prove the 31-year-old Kannan-Lovasz-Simonovits conjecture with a dimension-free constant, turning a slowly growing bound from July 2026 into an iterated logarithm and then eliminating dimension dependence by re-applying the recursion while bounding accumulated error. The search ran through 100+ candidates with human-directed agents, and parallel groups plus machine-checked verification independently confirmed the core criterion.",
+      "author": "Xinzhi Zhang",
+      "readingMinutes": 6
+    },
+    {
+      "title": "What will computer chips look like in 2045?",
+      "url": "https://www.dwarkesh.com/p/intel-tour",
+      "source": "Dwarkesh Patel",
+      "kind": "rss",
+      "publishedAt": "2026-10-22T15:02:21.000Z",
+      "topic": "FutureTech",
+      "note": "Patel's two days inside Intel walks through gate-all-around, backside power, CFET, ruthenium interconnects and hybrid bonding, and how 14A yield is actually debugged step by step. The binding number is tool supply: demand up 3x per year for a decade, with only enough tools in the world to roughly double leading-edge output.",
+      "author": "Dwarkesh Patel",
+      "readingMinutes": 50
+    },
+    {
+      "title": "What the Author Wrote, What the Agent Reads: Silent Cue Loss in Enterprise Document Ingestion",
+      "url": "https://tldr.takara.ai/p/2610.30026",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-21T16:51:25.000Z",
+      "topic": "AI",
+      "note": "Across 76 real enterprise policy documents, formatting-blind ingestion drops requirement recovery from 0.690 F1 to 0.150 with docling and 0.075 with plain text, replicated on six models including Claude tiers and GPT-5.6. Highlight adds +0.302 and colour +0.262, cues present in 32.8% of 6,460 sampled docs yet discarded by mainstream converters, making ingestion rather than reasoning the cheap, measurable fix.",
+      "readingMinutes": 1
+    }
+  ],
+  "stats": {
+    "considered": 254,
+    "sources": 50,
+    "model": "muse-spark-1.3"
+  }
+}
