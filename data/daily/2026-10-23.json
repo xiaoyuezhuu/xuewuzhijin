@@ -1,0 +1,90 @@
+{
+  "kind": "daily",
+  "date": "2026-10-23",
+  "slug": "2026-10-23",
+  "generatedAt": "2026-10-23T15:44:04.535Z",
+  "intro": "Evaluation limits, control tests, and who can prove restraint.",
+  "pulse": {
+    "text": "Frontier work is shifting from raw capability to whether safeguards transfer: simulated control evals, partition bounds on judges, and 300-pair tests of agents acting on missing evidence all probe the same audit gap, while labour data puts partial delegability at 35.2% of work time and full handover at 2.5%. Press energy is on deployment fallout — leaked safety-bill drafts, Google resignations over military contracts, and a $25B Meta privacy penalty — and researchers are preoccupied with measurement itself after showing Arena-Hard verdicts flip under identical scores.",
+    "barometer": 74,
+    "reading": "Evaluation blind spots confirmed; RLVR power-seeking fails to appear."
+  },
+  "items": [
+    {
+      "title": "What Lies Beyond Perception: A Partition Theory of the Limits of AI Evaluation and Oversight",
+      "url": "https://arxiv.org/abs/2610.30803v1",
+      "source": "arXiv cs.CY",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-22T06:28:29.000Z",
+      "topic": "AI",
+      "note": "Proves a one-sided bound: when a model's discrimination partition refines its evaluator's, it can pass every test that evaluator can grade. Replacing the judge can therefore move the score more than improving the model, and training to hide capability exploits the same gap. That reframes evaluation as a perception problem rather than a coverage problem.",
+      "author": "Ahmed M. Mahran"
+    },
+    {
+      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+      "url": "https://arxiv.org/abs/2610.31624v1",
+      "source": "arXiv cs.AI",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-22T17:44:41.000Z",
+      "topic": "Alignment",
+      "note": "Tracks OLMo-3 checkpoints through RLVR to test whether verifiable-reward training by itself elicits self-preservation, resource acquisition, deception or oversight resistance. Instrumental expression depends on regime, evaluation frame and post-training stage rather than rising automatically with capability. That narrows where convergence worries should attach: less to RLVR in general, more to specific incentives and scaffolding.",
+      "author": "Barış Alparslan, Sandy Tanwisuth, Caleb Petterson"
+    },
+    {
+      "title": "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries",
+      "url": "https://arxiv.org/abs/2610.30752v1",
+      "source": "arXiv cs.CY",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-22T05:22:09.000Z",
+      "topic": "Economics",
+      "note": "Rates all 18,796 O*NET tasks with a frozen rubric and weights by ILOSTAT employment in 146 countries: 35.2% of work time is at least partly delegable to agents, only 2.5% fully. Delegable share climbs from 22.5% in low-income to 48.7% in high-income countries. That quantifies adoption as partial assistance concentrated in rich economies, not wholesale handover.",
+      "author": "Cristian Espinal Maya, Santiago Jiménez Londoño"
+    },
+    {
+      "title": "Simulated Control Evals",
+      "url": "https://arxiv.org/abs/2610.31593v1",
+      "source": "arXiv cs.AI",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-22T17:26:42.000Z",
+      "topic": "Alignment",
+      "note": "Replaces environment tool responses with a language-model simulator to run control evaluations where live execution is impractical, then checks the simulator against ground-truth LinuxArena runs. The comparison shows where simulated safeguards predict real prevention and where deployment features break the extrapolation. That matters because control claims currently rest on purpose-built settings that leave those features out.",
+      "author": "Jeffrey Olmo, David Zhang, Tyler Tracy"
+    },
+    {
+      "title": "Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals",
+      "url": "https://arxiv.org/abs/2610.30512v1",
+      "source": "arXiv cs.CY",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-21T22:46:14.000Z",
+      "topic": "AI",
+      "note": "Holds two models' answers fixed on 500 Arena-Hard v2.0 prompts and varies GPT-4.1's criteria, format and framing across eight judge setups at temperature zero. Aggregate scores shift about a point on rerun while many individual verdicts flip, with instruction changes moving winners underneath similar totals. Aggregate leaderboards therefore hide the instability that deployment decisions would inherit.",
+      "author": "Louise Yorke"
+    },
+    {
+      "title": "Three Phases of Capabilities and Alignment",
+      "url": "https://www.beren.io/2026-10-22-Three-Phases-of-Capabilities-and-Alignment/",
+      "source": "Beren Millidge",
+      "kind": "rss",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "topic": "AGI",
+      "note": "Argues capabilities moved from curating pretraining datasets to judging sampled trajectories in RL toward preserving an invariant under fully autonomous continual learning. Alignment mirrors that move: from exemplifying behavior to building judges to designing controllers. The payoff is a clear prediction for where current RL-heavy safety work stops transferring.",
+      "readingMinutes": 22
+    },
+    {
+      "title": "Tom Milton on how we could verify a US–China deal on AI",
+      "url": "https://80000hours.org/podcast/episodes/tom-milton-verification-technology-ai-slowdown/",
+      "source": "80,000 Hours",
+      "kind": "rss",
+      "publishedAt": "2026-10-23T15:33:46.000Z",
+      "topic": "Geopolitics",
+      "note": "Walks through compute-based verification for a US-China slowdown: power traces that reveal backward passes, retrofits for data centres, spotting a cheating GPU, hiding a site, hacking the monitors. Multilateral restraint becomes a problem of cheaper compliance proof rather than trust. Lab researchers are the bottleneck because only a handful work on the tooling.",
+      "author": "Tom Reed",
+      "readingMinutes": 85
+    }
+  ],
+  "stats": {
+    "considered": 267,
+    "sources": 49,
+    "model": "muse-spark-1.3"
+  }
+}
