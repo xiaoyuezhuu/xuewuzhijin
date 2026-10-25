@@ -1,0 +1,96 @@
+{
+  "kind": "daily",
+  "date": "2026-10-25",
+  "slug": "2026-10-25",
+  "generatedAt": "2026-10-25T14:57:05.601Z",
+  "intro": "Open-weight frontier capability is arriving on top of a fragile internet institutions can't defend.",
+  "pulse": {
+    "text": "Frontier capability is leaking outward: Kimi K3.1 Pro scores 55 ahead of GPT-6 Astra with weights due Nov 4, a filesystem scaffold lifts a 27B Qwen past Fable 5 on LiveCodeBench, and Cerebras shows a 3T open model serving at 1,000+ tokens/sec. Press and Hacker News attention is fixed less on benchmarks than on the substrate breaking underneath — a critical Brotli RCE touching Node, Python and Envoy — while researchers argue over whether cyber risk from open weights was understated and institutions like the OPCW stall over $17M in dues.",
+    "barometer": 75,
+    "reading": "Frontier open weights met internet-scale RCE and stalled treaty funding."
+  },
+  "items": [
+    {
+      "title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+      "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-10-25T11:49:00.000Z",
+      "topic": "Alignment",
+      "note": "Lambert and Brand trace why Kimi K3.1 Pro hits 55 on Artificial Analysis yet looks jagged on long-horizon tasks like ProgramBench, with weights due Nov 4. The cyber half is the load-bearing part: abliterated APIs, LiteLLM and PHP-to-shell cases force a rethink of whether open-weight cyber uplift was understated.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 31
+    },
+    {
+      "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-24T08:06:39.000Z",
+      "topic": "FutureTech",
+      "note": "A Brotli decoder out-of-bounds write (CVE-2026-111497, CVSS 9.2) lets unauthenticated attackers corrupt memory via crafted streams in Node, Python, Bun, Envoy and anything bundling libbrotli through 1.2.0. OpenAI fixed the root cause in February without recognizing it as exploitable, which is why patches and scanner coverage are only catching up now.",
+      "author": "theanonymousone",
+      "readingMinutes": 10
+    },
+    {
+      "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+      "url": "https://github.com/slee-persis/GVS5H",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-25T03:56:01.000Z",
+      "topic": "AI",
+      "note": "A training-free scaffold lets fresh instances coordinate through a shared plan and filesystem, lifting open Qwen3.8-27B from 66.8% to 92.4% on 100 hard LiveCodeBench problems versus Fable 5 at 90.4%. Orchestrated Qwen Flash hits 93.0% at 9% of the cost, implying frontier coding gaps can close through organization rather than scale.",
+      "author": "rzk",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Dream-1",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-24T18:23:24.000Z",
+      "topic": "AGI",
+      "note": "Dream Labs claims Dream-1 drives unseen bimanual robots on unseen tasks via API with no fine-tuning, building on DreamZero transfer from 30 minutes of embodiment data. Paired with $2k arm setups and 10,000 $399 Microducks sold in four days, the bet is cheap hardware plus generalist policies starts a data flywheel.",
+      "author": "GaggiX",
+      "readingMinutes": 11
+    },
+    {
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-25T01:33:49.000Z",
+      "topic": "FutureTech",
+      "note": "Cerebras shows Kimi K3's 3 trillion parameters mapping across 59 WSE-3T wafers — one dense layer per wafer for KV cache, two linear-attention layers elsewhere — for 1,000-2,000 tokens/sec. The arithmetic matters because trillion-parameter open models are already servable at frontier speed without a GPU cluster.",
+      "author": "gmays",
+      "readingMinutes": 5
+    },
+    {
+      "title": "Chemical Security Is National Security",
+      "url": "https://www.lawfaremedia.org/article/chemical-security-is-national-security",
+      "source": "Lawfare",
+      "kind": "rss",
+      "publishedAt": "2026-10-25T13:00:11.000Z",
+      "topic": "Geopolitics",
+      "note": "Koblentz details how US nonpayment of $17M, a fifth of the OPCW's $90M budget, threatens Syria verification, Ukraine assistance and a Sudan inquiry. Verification here fails not from defiance but from unpaid dues, a direct analogue for how AI treaty regimes could hollow out.",
+      "author": "Gregory Koblentz",
+      "readingMinutes": 10
+    },
+    {
+      "title": "Crows can evaluate visual info twice as fast as mammals",
+      "url": "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+      "source": "Ars Technica Science",
+      "kind": "rss",
+      "publishedAt": "2026-10-23T17:32:58.000Z",
+      "topic": "Neuroscience",
+      "note": "Two crows on the standard random-dot-motion task matched monkey accuracy in about 235ms versus 410-600ms, with 58 of 248 NCL neurons showing early direction-selective accumulation. Convergent evidence integration on non-layered hardware weakens any claim that cortical lamination is required for deliberation.",
+      "author": "Jacek Krywko",
+      "readingMinutes": 6
+    }
+  ],
+  "stats": {
+    "considered": 102,
+    "sources": 30,
+    "model": "muse-spark-1.3"
+  }
+}
