@@ -1,0 +1,74 @@
+{
+  "kind": "daily",
+  "date": "2026-10-26",
+  "slug": "2026-10-26",
+  "generatedAt": "2026-10-26T17:17:21.879Z",
+  "intro": "Recursive improvement claims collide with measurement doubts while open-science norms get renegotiated.",
+  "pulse": {
+    "text": "Self-directed R&D is the day's concrete datum: 26% of Anthropic's research led by Claude under supervision, a 23% kernel speedup from AlphaEvolve, and 719 auto-generated math manuscripts from OpenAI, all still confined to harnesses and tooling rather than direct weight rewriting. Public framing splits between singularity-begun pronouncements and pushback emphasizing everyday harms and inconclusive head-to-head tests, while researchers are preoccupied with who gets early access to machine proofs and whether citation graphs undercount neuroscience's foundational role.",
+    "barometer": 73,
+    "reading": "Self-improvement stayed in scaffolds with human supervision, no new loss-of-control signal."
+  },
+  "items": [
+    {
+      "title": "📈 Monday data: For science the bottleneck isn’t intelligence",
+      "url": "https://www.exponentialview.co/p/monday-data-for-science-the-bottleneck",
+      "source": "Exponential View",
+      "kind": "rss",
+      "publishedAt": "2026-10-26T15:25:11.000Z",
+      "topic": "AGI",
+      "note": "Jack Clark's singularity claim rests on numbers like 26% of Anthropic R&D led by Claude, AlphaEvolve's 23% kernel speedup, and MiniMax's 30% harness gain over 100 rewrites. The survey stresses the limit: systems rewrite scaffolding, memory and samplers, not their own weights, and the one head-to-head test of AI-built versus human-built improvers was inconclusive. That distinction between harness improvement and weight self-modification is the number to keep for takeoff debates.",
+      "author": "Azeem Azhar",
+      "readingMinutes": 2
+    },
+    {
+      "title": "The World Is Something We Make",
+      "url": "https://www.argmin.net/p/the-world-is-something-we-make",
+      "source": "Ben Recht",
+      "kind": "rss",
+      "publishedAt": "2026-10-26T14:23:01.000Z",
+      "topic": "AI",
+      "note": "Frictionless reproducibility – shared datasets, code and benchmarks – drove vision and protein folding, but language models broke the pattern with undisclosed training data justified by competition and safety stories. Marin and AI2 are the only fully open efforts (weights, code, data, process), and idle-compute pooling is the missing piece for an Opus-4.5-class prototype. The stake is auditability and cumulative improvement, not just cheaper inference.",
+      "author": "Ben Recht",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Commentary: Citation graphs may underestimate neuroscience’s influence on AI",
+      "url": "https://www.thetransmitter.org/neuroai/commentary-citation-graphs-may-underestimate-neurosciences-influence-on-ai/",
+      "source": "The Transmitter",
+      "kind": "rss",
+      "publishedAt": "2026-10-26T04:02:27.000Z",
+      "topic": "Neuroscience",
+      "note": "Citation counts miss foundational debts because successful ideas undergo obliteration by incorporation: no RNN paper cites a single source for recurrence, and attention came from decades of psychology before Attention Is All You Need. Machine-learning papers cite a median age of 3 years versus 8 in neuroscience, so lineage like mixed-selectivity roots of Golden Gate Claude disappears from graphs. Measurement reform matters because undercounting brain-derived organizing ideas misdirects where to look for efficiency and interpretability tools.",
+      "author": "Anthony Zador",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Disadvantages of Designating Mathematicians for AI Output Releases",
+      "url": "https://terrytao.wordpress.com/2026/10/25/disadvantages-of-designating-mathematicians-for-ai-output-releases/",
+      "source": "Terence Tao",
+      "kind": "rss",
+      "publishedAt": "2026-10-25T22:17:58.000Z",
+      "topic": "AI",
+      "note": "Labs have started designating individual mathematicians for early access to AI proofs, giving head starts, opaque selection, and borrowed reputation. The advisory group recommends posting instead to uncontrolled repositories with model name, prompts, chains of thought, attempt counts, compute and cost, plus Lean formalization where feasible. Independent nonprofits, not labs, should allocate support for workshops and reading groups that build communal understanding.",
+      "author": "Terence Tao",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Where the Romans Fought (interactive map)",
+      "url": "https://iosiflazaridis.github.io/battles-of-the-romans/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-25T18:58:14.000Z",
+      "topic": "Design",
+      "note": "The map plots every named Roman battle from 753 BCE to 1475 CE – 1,469 with known outcomes – as scalable pies for opponents, diamonds for sea fights, and grey for 236 civil wars. Each entry carries date, commanders, army composition, sources and doubt flags, with zoom-dependent merging. It earns study for showing how to keep dense, contested records legible without smoothing over uncertainty.",
+      "author": "endorphine",
+      "readingMinutes": 6
+    }
+  ],
+  "stats": {
+    "considered": 94,
+    "sources": 31,
+    "model": "muse-spark-1.3"
+  }
+}
