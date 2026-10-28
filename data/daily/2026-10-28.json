@@ -1,0 +1,91 @@
+{
+  "kind": "daily",
+  "date": "2026-10-28",
+  "slug": "2026-10-28",
+  "generatedAt": "2026-10-28T17:09:42.738Z",
+  "intro": "Agents are doing real work at scale while safety and measurement scramble to keep up.",
+  "pulse": {
+    "text": "Frontier coding agents are now the economy: GitHub reports 220M merged pull requests a month after tripling in under a year, while Anthropic's S-1 shows more than 80% of revenue from models less than six months old. Researchers are preoccupied with whether self-improvement can hold — unsupervised RLVR collapses to a single answer as data grows, benign fine-tuning quietly undoes safety, and the new Artificial Analysis index puts eight closed models ahead of the best open weights — while the press argues over Anthropic's singularity and sentience storytelling around its $1.5T IPO.",
+    "barometer": 75,
+    "reading": "Coding agents tripled output as self-rewarded RL shown to collapse"
+  },
+  "items": [
+    {
+      "title": "Collective Dynamics of Self-Reinforcement: How Cross-Task Coupling Drives Policy Collapse in Unsupervised RLVR",
+      "url": "https://arxiv.org/abs/2610.37553v1",
+      "source": "arXiv cs.LG",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-27T17:01:55.000Z",
+      "topic": "Alignment",
+      "note": "Training on own majority vote helps at first, then tips: average reward climbs to one while accuracy slides until the model repeats one answer. The analysis traces that dataset-size dependence to shared parameters amplifying a common perturbation once <F'> turns positive. That undercuts any plan to scale reasoning on purely self-generated rewards.",
+      "author": "Peize Ding"
+    },
+    {
+      "title": "GitHub Octoverse 2026",
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "publishedAt": "2026-10-28T16:45:23.000Z",
+      "topic": "Economics",
+      "note": "Merged pull requests now run at 220 million a month, triple in under a year, with commits at 7.38 billion and new repos doubling to 30.3 million. Most of the jump came in the second half of 2026, the footprint of agents writing and merging code. That is adoption measured in merged work, not demos.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "url": "https://tldr.takara.ai/p/2610.37649",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-10-27T17:57:00.000Z",
+      "topic": "AGI",
+      "note": "Twelve models were set loose in simulated worlds where physics differs, with no hint what changed, to notice anomalies and run experiments. Only GPT-6-Astra ever recovered the altered law, at 16.7%, with logs full of missed anomalies and half-identified rules. Autonomous discovery is real but narrow, not yet a general capability.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+      "url": "https://arxiv.org/abs/2610.37481v1",
+      "source": "arXiv cs.CL",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-27T16:08:08.000Z",
+      "topic": "Alignment",
+      "note": "Benign-looking fine-tuning data can quietly strip safety, and content filters miss it because nothing looks harmful. SimpleLoRIF scores examples by gradient alignment with unsafe behavior using only the last four blocks, which scales embedding to a million-example datasets. That turns gradient attribution from lab tool into a usable post-training filter.",
+      "author": "Saket Reddy, Amro Abbas, Anshuman Suri"
+    },
+    {
+      "title": "Artificial Analysis v5 and the benchmarker's dilemma",
+      "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-10-28T12:58:39.000Z",
+      "topic": "AI",
+      "note": "The index was rebuilt around current use — 25% each for knowledge work, coding, science and general, with FrontierCode 2.0 and Terminal-Bench-Science carrying weight — and eight closed models now sit above the best open-weight Kimi K3.1 Pro. Lambert reads that gap as real on open-ended agency but not the whole economy, where open models win by commoditizing high-demand inference. The lasting point is structural: one number must steer a trillion-dollar market and will always mislead somewhere.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 8
+    },
+    {
+      "title": "How brains prevent ‘catastrophic forgetting’",
+      "url": "https://www.thetransmitter.org/systems-neuroscience/how-brains-prevent-catastrophic-forgetting/",
+      "source": "The Transmitter",
+      "kind": "rss",
+      "publishedAt": "2026-10-28T04:00:02.000Z",
+      "topic": "Neuroscience",
+      "note": "A Neuron model gives each cell several dendritic compartments that learn independently, with inhibitory cells unlocking plasticity in one branch at a time. The same neuron can then join multiple assemblies, copy patterns across areas, and separate visually similar 0 and O once sound context is added. For machine continual learning, the trick is context-gated local plasticity, not bigger replay buffers.",
+      "author": "Natalia Mesa",
+      "readingMinutes": 5
+    },
+    {
+      "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "url": "https://arxiv.org/abs/2610.37657v1",
+      "source": "arXiv cs.LG",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-27T17:58:52.000Z",
+      "topic": "Alignment",
+      "note": "Small learned gates tell each attention head how to weight trusted instructions versus untrusted data, so the model can use poisoned content without obeying it. On Llama-3.3-70B and GPT-OSS-20B the method survives adaptive attacks better than SecAlign++ and ASIDE while holding utility benchmarks. Architectural separation beats another round of fine-tuning.",
+      "author": "Igor Shilov, Xiaoxue Yang, Alexander Panfilov"
+    }
+  ],
+  "stats": {
+    "considered": 267,
+    "sources": 52,
+    "model": "muse-spark-1.3"
+  }
+}
