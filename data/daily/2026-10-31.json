@@ -1,0 +1,94 @@
+{
+  "kind": "daily",
+  "date": "2026-10-31",
+  "slug": "2026-10-31",
+  "generatedAt": "2026-10-31T16:03:16.685Z",
+  "intro": "Exploits spread, agents swarm, and the money math strains to keep up.",
+  "pulse": {
+    "text": "Frontier math and agentic gains keep compounding, from distinct Ramanujan solutions to fifty-agent Minecraft settlements and autonomous diamond-spin labs, while GLM-5.3-powered vulnerability hunting floods defenders still patching PHP2Shell and GitLab flaws. Markets punished the buildout after Alphabet's $500 billion drop on $205 billion capex and weaker AI Mode monetization, and voters tell pollsters AI ranks above crime but below the economy, with campaigns quietly buying AI-attack ads. Researchers are preoccupied with making safety stick across turns and swarms, whether by occupying shallow alignment spans or forcing agents to veto each other.",
+    "barometer": 74,
+    "reading": "Defenses absorbing Black October exploits without step-change collapse."
+  },
+  "items": [
+    {
+      "title": "Was I wrong about open models & cyber risks?",
+      "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-10-30T17:36:56.000Z",
+      "topic": "Alignment",
+      "note": "Lambert revisits his April claim that an open-weight Claude Mythos would have been survivable, and finds GLM-5.3 crossed that capability line over a month ago without collapsing infrastructure. Epoch AI's Firefox drive-by that exfiltrates files on visit shows the missing link is chaining, while first responders patching PHP2Shell and GitLab bugs are strained but functioning. That reframes open-model cyber risk from single-step catastrophe to an expensive, grinding update cycle.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 7
+    },
+    {
+      "title": "What Google and Reddit's bad days have in common",
+      "url": "https://www.platformer.news/thursday-newsletter-6/",
+      "source": "Platformer",
+      "kind": "rss",
+      "publishedAt": "2026-10-30T00:51:00.000Z",
+      "topic": "Economics",
+      "note": "Alphabet lost $500 billion in a day after guiding to $205 billion in capex with negative $9 billion free cash flow, while admitting AI Mode with a billion users earns less than traditional search. Reddit fell 15% on collapsing search traffic and will force logins to protect its corpus. Tucked inside the gloom, Gemini 4 Carbon topping the Intelligence Index as a defenders-only model suggests frontier capability is being routed to patching first.",
+      "author": "Casey Newton",
+      "readingMinutes": 12
+    },
+    {
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-29T21:40:28.000Z",
+      "topic": "AGI",
+      "note": "Fifty GPT-6.1 agents told to build a civilization in Minecraft harvested nearby trees in 90 seconds, anointed Ada as leader, and kept ration ledgers, permits and shared farm coordinates. After 22 of 34 deaths on the first night they abandoned distant scouting and huddled in lit shelters. The log shows how hierarchy and risk-aversion emerge without programming, the behavior to watch as thousand-agent swarms start clearing math problems.",
+      "author": "sandslash",
+      "readingMinutes": 57
+    },
+    {
+      "title": "Is Half of China’s AI Making Slop?",
+      "url": "https://www.chinatalk.media/p/is-half-of-chinas-ai-making-slop",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-10-30T10:04:01.000Z",
+      "topic": "AI",
+      "note": "A COL Group investor call claiming 55% of China's tokens go to AI short dramas and video versus 15% for coding went viral, amplified by 430,000 micro-dramas released in eight months with over 90% AI involvement. ByteDance counters video is ~10% of its own compute, and a five-second Seedance clip burns ~100,000 tokens, so token share misleads. The fight exposes how little anyone knows about where inference actually goes, and why the gunpowder-fireworks scolding misreads pleasure as waste.",
+      "author": "Zilan Qian",
+      "readingMinutes": 17
+    },
+    {
+      "title": "Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs",
+      "url": "https://arxiv.org/abs/2610.40551v1",
+      "source": "arXiv cs.AI",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-29T17:39:04.000Z",
+      "topic": "AGI",
+      "note": "The Ramanujan Challenge moves testing from olympiads to unpublished number-theory results and open conjectures where formulas can be checked numerically but proofs need new ideas. The analysis compares models, computer algebra systems and formal tools on the same submissions. Correct machine outputs that differ conceptually from official solutions give the first clean signal of research-level mathematical novelty rather than retrieval.",
+      "author": "Alan Sorani, Ashvni Narayanan, Michael Shalyt"
+    },
+    {
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-30T15:52:18.000Z",
+      "topic": "Economics",
+      "note": "PagerDuty's tiered automation now handles known fixes while reserving novel cascading failures for humans, replaying Bainbridge's 1983 warning that automation leaves operators with rare crises they no longer practice for. Medicine already shows the cost as endoscopists' unassisted polyp detection fell from 28% to 22% after AI assistance. For SREs the risk is not replacement but silent skill loss masked as productivity until the first unseen outage.",
+      "author": "dorianniemiec",
+      "readingMinutes": 7
+    },
+    {
+      "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+      "url": "https://arxiv.org/abs/2610.40627v1",
+      "source": "arXiv cs.CL",
+      "kind": "arxiv",
+      "publishedAt": "2026-10-29T17:56:53.000Z",
+      "topic": "Alignment",
+      "note": "Multi-turn jailbreaks work because safety lives in the first few output tokens, and existing monitors only watch surface form without forcing a safety verdict. ShallowDefend puts the defender in that high-leverage span first, requiring an explicit safety decision to learn. If the span determines the trajectory, training it directly is the cheapest place to recover robustness.",
+      "author": "Qiyao Ma, Xiaodong Liu, Weiwei Yang"
+    }
+  ],
+  "stats": {
+    "considered": 186,
+    "sources": 46,
+    "model": "muse-spark-1.3"
+  }
+}
