@@ -1,0 +1,95 @@
+{
+  "kind": "daily",
+  "date": "2026-11-01",
+  "slug": "2026-11-01",
+  "generatedAt": "2026-11-01T17:06:25.679Z",
+  "intro": "Security boundaries failed while small models matched giants and markets wobbled.",
+  "pulse": {
+    "text": "AI development today looks like capability leaking outward: a claimed Unique Games proof with Lean code awaits human vetting while five 27B Qwens reproduce frontier coding scores through scaffolding alone. Deployment trust took hits from a ChatGPT share-link takeover fixed October 26 and a stealer that grades victims with OpenRouter and routes around refusals, alongside a $1.1 trillion Korea drawdown centered on HBM and a Proton revolt over AI-forced velocity. Researchers are preoccupied with verification — of math proofs, sandboxes, and world models in parietal cortex — while users and markets respond by cancelling plans and suspending leveraged bets.",
+    "barometer": 74,
+    "reading": "Share-link takeover and refusal-evading malware held pressure elevated."
+  },
+  "items": [
+    {
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-31T10:30:11.000Z",
+      "topic": "AI",
+      "note": "A public ChatGPT share link could run JavaScript as the viewer by chaining MathLive's unchecked postMessage keyboard layout through innerHTML into an unsandboxed srcdoc iframe, then slipping past CSP with a YouTube oEmbed JSONP callback. The payload could list private chats and call authenticated APIs, and OpenAI fixed it October 26 as a P1. It matters because the isolation looked correct feature by feature and failed in composition, the exact failure mode to expect as agents get preview tools.",
+      "author": "armcat",
+      "readingMinutes": 11
+    },
+    {
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-31T14:29:03.000Z",
+      "topic": "Alignment",
+      "note": "VOLTA steals browsers, wallets, sessions and tokens, enriches them with Gmail receipts and delivery histories, then sends an Identity_Report to OpenRouter at temperature 0.2 to rank WHAT THEY'RE WORTH and grade opsec. If a reply contains 'I can't' it cascades from opus-4.6 to kimi-k2 to gemini-2.5-flash. The shift is from AI helping steal to AI deciding who is worth robbing, with refusal handling built in as reliability engineering.",
+      "author": "khalidkhair",
+      "readingMinutes": 7
+    },
+    {
+      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-31T22:46:12.000Z",
+      "topic": "AGI",
+      "note": "Five Qwen3.8-27B instances split into planner, two ideators, solver and repair, communicating only through files and judged by running public samples, averaged 9.8/10 over ten LiveCodeBench Hard problems across five passes versus 8.0 for single-call Fable 5. The run cost $35.79 total at a median $0.39 and 40 minutes, reproducing the authors' 92.4 to 90.4 gap on the full hundred. Parity on a tiny, possibly contaminated sample proves little alone, but it confirms the gain comes from the ledger and test loop rather than model size.",
+      "author": "guregodevo",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Korea’s Stock Market Crashed $1 Trillion. What Does That Mean for the Global AI Race?",
+      "url": "https://www.chinatalk.media/p/koreas-stock-market-crashed-1-trillion",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-11-01T13:33:33.000Z",
+      "topic": "Economics",
+      "note": "From March 2025 to June 2026 the KOSPI rose 241% adding $3.3 trillion on SK hynix and Samsung, who together hold 83% of HBM and 63% of DRAM, before shedding $1.1 trillion in three weeks as both fell ~30%. Trading had concentrated to 84% of volume in the two stocks plus single-name leveraged ETFs, which regulators then suspended. The market now functions as leveraged exposure to the memory triopoly just as China's CXMT threatens to undercut pricing.",
+      "author": "Richard Gray",
+      "readingMinutes": 15
+    },
+    {
+      "title": "Talk by Dana Moshkovitz: The Unique Games Conjecture – Proved (!!?)",
+      "url": "https://scottaaronson.blog/?p=10232",
+      "source": "Scott Aaronson",
+      "kind": "rss",
+      "publishedAt": "2026-10-30T23:27:34.000Z",
+      "topic": "AI",
+      "note": "OpenAI released a claimed proof of the Unique Games Conjecture with a Lean formalization written in a form few mathematicians can read, prompting weeks of study by Khot, Håstad, Minzer and Dana Moshkovitz with GPT-6 Astra. Her November 4 talk frames the core as 'Hadamard with a noise test' plus a quadratic that behaves linear and a harmonic-number bound. Whether the construction survives human checking will say as much about AI-led mathematics as about hardness of approximation.",
+      "author": "Scott",
+      "readingMinutes": 3
+    },
+    {
+      "title": "A Unified World Model in Human Posterior Parietal Cortex",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762936v1?rss=1",
+      "source": "bioRxiv Neuroscience",
+      "kind": "rss",
+      "publishedAt": "2026-11-01T00:00:00.000Z",
+      "topic": "Neuroscience",
+      "note": "Microelectrode recordings in superior parietal lobule from two implanted participants found the same units engaged by block-tower stability judgments and naturalistic physics also predicted moving-object collisions hundreds of milliseconds early. That overlap links understanding, prediction and planning in one population. For AI, it is anatomical support for the unified world-model bet rather than separate modules.",
+      "author": "Bougou, V., Pramod, R., Rosario, E. R., Pejsa, K., Bari, A., Tenenbaum, J. B., Kanwisher, N., Andersen, R. A."
+    },
+    {
+      "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+      "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-10-30T17:24:45.000Z",
+      "topic": "AI",
+      "note": "Proton leadership required nearly company-wide re-interviews to justify AI use, after months of pressure where the CEO dismissed a request to pentest AI-written code as 'loser thinking' and the CTO warned 'your old job is gone.' After 404 Media's reporting Yen cancelled the interviews but kept the AI push, folding it into performance reviews. A privacy company openly trading review for velocity is a concrete case of institutions not coping with deployment pressure.",
+      "author": "cdrnsf",
+      "readingMinutes": 4
+    }
+  ],
+  "stats": {
+    "considered": 86,
+    "sources": 23,
+    "model": "muse-spark-1.3"
+  }
+}
