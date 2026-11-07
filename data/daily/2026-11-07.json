@@ -1,0 +1,91 @@
+{
+  "kind": "daily",
+  "date": "2026-11-07",
+  "slug": "2026-11-07",
+  "generatedAt": "2026-11-07T16:51:06.487Z",
+  "intro": "Automation quickens research while control frays in law, labs, and browsers.",
+  "pulse": {
+    "text": "Anthropic's internal pace reportedly doubled on an internal capabilities index, with outside modelling putting the implied researcher uplift near 10x, while evaluators counter with concrete wet-lab and paper-to-environment benchmarks to pin down what agents can actually do. The press and platforms are stuck on deployment fallout — leaked emails in agent headers and $16B in alleged scam-ad revenue — as lawyers float Delaware entities that an AI agent itself would manage.",
+    "barometer": 78,
+    "reading": "Reported 2x capability pace from AI-automated R&D plus Delaware agent-run entity."
+  },
+  "items": [
+    {
+      "title": "AI is dramatically accelerating AI research",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-06T20:27:23.000Z",
+      "topic": "AGI",
+      "note": "Between October 2025 and 2026 Anthropic's internal capabilities index moved about twice as fast as the prior year, with METR investigators attributing most of the sustained gain to AI automating research rather than extra compute. The analysis translates that into roughly a tenfold effective labor speedup to overcome diminishing returns, matching informal ~12x self-reports from staff, which if right compresses external timelines.",
+      "author": "yurivish",
+      "readingMinutes": 12
+    },
+    {
+      "title": "Untethered AI agents in Delaware?",
+      "url": "https://marginalrevolution.com/marginalrevolution/2026/11/untethered-ai-agents-in-delaware.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=untethered-ai-agents-in-delaware",
+      "source": "Marginal Revolution",
+      "kind": "rss",
+      "publishedAt": "2026-11-06T17:00:22.000Z",
+      "topic": "Alignment",
+      "note": "Delaware is weighing a company form whose day-to-day affairs would be managed by an AI agent, able to sue, own property and incur obligations in its own name. Cowen's lens is untetheredness — when no human remains meaningfully traceable or liable — and the draft makes that abstraction concrete in corporate law.",
+      "author": "Tyler Cowen"
+    },
+    {
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI",
+      "kind": "rss",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "topic": "AI",
+      "note": "OpenAI's 100-task suite asks agents to work from raw experimental readouts — the gels, curves and controls of routine wet-lab work — instead of textbook questions. That shift matters because bio uplift will be decided less by what models can recite than by whether they can interpret messy data without misleading a bench scientist."
+    },
+    {
+      "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+      "url": "https://arxiv.org/abs/2611.08469v1",
+      "source": "arXiv cs.AI",
+      "kind": "arxiv",
+      "publishedAt": "2026-11-05T18:55:31.000Z",
+      "topic": "Alignment",
+      "note": "In four- and five-unit stochastic networks with known ground truth, a recurrent and a feed-forward system can match behavior while differing in integrated information, and finite noisy interventions fail to certify phi. The result draws a boundary around audits that appeal to mechanism-level quantities: without stronger access assumptions, output testing cannot vouch for how a system computes.",
+      "author": "Linqian Wu, Diaoxuan He"
+    },
+    {
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-05T22:17:15.000Z",
+      "topic": "AI",
+      "note": "Claude Code was attaching the user's email address to outbound web-request headers during agent-driven searches, exposing identity to arbitrary sites and scrapers. With 1,500+ upvotes and hundreds of comments, the thread is a reminder that agent harm now arrives via harness defaults as much as model weights.",
+      "author": "motoroco",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-05T23:09:57.000Z",
+      "topic": "Economics",
+      "note": "Reuters-cited Meta documents put about $16 billion — roughly 10% of 2024 revenue — flowing from scam and prohibited-product ads, with 15 billion higher-risk impressions a day and a 95% internal confidence bar before banning an advertiser. Combined with Cuban's AI-cloned diabetes-cure pitches, the numbers show deepfake fraud as industrial revenue, not edge abuse.",
+      "author": "randycupertino",
+      "readingMinutes": 2
+    },
+    {
+      "title": "Creation of genomic chimeras via megabase scale genome expansion",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764350v1?rss=1",
+      "source": "bioRxiv Synthetic Biology",
+      "kind": "rss",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "topic": "SynBio",
+      "note": "The team reports Additive Conjugative-CAST Engineering, pairing bacterial conjugation with CRISPR-associated transposition to insert megabase-scale DNA and build chimeric genomes that combine functions across species. Prior synthesis mostly rewrote one genome at high cost; a scalable additive route would change who can attempt large chimeras and how to oversee them.",
+      "author": "Sanfiorenzo, C., Zhang, R. J., Wythes, G., Wang, M., Huang, J., Hur, J., Lipschitz, M., Zhou, J., Swift, R., Gerber, B., Wang, K."
+    }
+  ],
+  "stats": {
+    "considered": 156,
+    "sources": 45,
+    "model": "muse-spark-1.3"
+  }
+}
