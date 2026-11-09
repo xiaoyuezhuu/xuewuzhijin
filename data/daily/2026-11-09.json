@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "date": "2026-11-09",
+  "slug": "2026-11-09",
+  "generatedAt": "2026-11-09T21:26:13.753Z",
+  "intro": "Acceleration is now measured, not theorized, while safety, power, and oversight lag behind.",
+  "pulse": {
+    "text": "Frontier development is now arguing over measured self-acceleration, with METR estimating 1.7x faster capabilities progress at Anthropic and staff inferring ~10x researcher uplift, paired with concrete deployment risks like SSH-agent forwarding and 284B-parameter models running on 64GB of CPU RAM. Public reaction remains anchored in electricity and bills, with 40 of 41 anti-data-center ballots passing and reporting from Data Center Alley tracing opposition to grid strain and behind-the-meter gas turbines. The research community is preoccupied with AI reshaping science itself, from an AI-assisted Lean-certified proof of the Aaronson-Ambainis conjecture to ICLR reviews flagged as AI-generated and early-career mathematicians reporting darker career outlooks.",
+    "barometer": 77,
+    "reading": "Measured 1.7x RSI speedup plus SSH-agent leak holds risk elevated."
+  },
+  "items": [
+    {
+      "title": "Ajeya: AI is dramatically accelerating AI research right now",
+      "url": "https://www.alignmentforum.org/posts/8tL9f5HZxsTvn2LHp/ajeya-ai-is-dramatically-accelerating-ai-research-right-now",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-11-08T17:15:13.000Z",
+      "topic": "AGI",
+      "note": "Anthropic disclosed it may imminently meet its RSP trigger for dramatically accelerated progress, defined as twice the fastest pre-AI rate and attributable to AI doing AI R&D. METR's deep-access work behind that claim points to ~1.7x faster overall capabilities progress, implying researcher-level uplift near 10-12x. That turns recursive self-improvement from a forecast into a number to argue about.",
+      "author": "Zach Stein-Perlman"
+    },
+    {
+      "title": "Where is all the AI safety research uplift?",
+      "url": "https://www.alignmentforum.org/posts/wPrpnfaNL5JP9i6KT/where-is-all-the-ai-safety-research-uplift",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-11-09T18:02:01.000Z",
+      "topic": "Alignment",
+      "note": "Buck points out the awkward corollary: if capabilities researchers are getting ~10x from Mythos 5 and Opus 5.5, safety researchers with the same models should be too. The absence of a visible 10x in safety results is itself evidence about where the uplift goes. It reframes RSI as asymmetric by default, not neutral.",
+      "author": "Buck"
+    },
+    {
+      "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+      "url": "https://news.ycombinator.com/item?id=50422628",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-09T08:17:49.000Z",
+      "topic": "AI",
+      "note": "ChatGPT Desktop forwards a local SSH agent to remote execution, so code running elsewhere can authenticate as you and push to private GitHub repos. The linked Codex thread provides proof-of-behavior, not just a policy worry. For agentic coding tools, credential boundaries are now the control problem.",
+      "author": "DenGorbachev"
+    },
+    {
+      "title": "The backlash about data centers might really just be about electricity",
+      "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+      "source": "MIT Technology Review",
+      "kind": "rss",
+      "publishedAt": "2026-11-09T19:35:33.000Z",
+      "topic": "Economics",
+      "note": "Reporting from Ashburn argues the data-center revolt is less culture war than megawatts: typical facilities draw 54MW, frontier training sites want 300MW to 6,000MW, increasingly behind-the-meter on gas turbines. Voters approved 40 of 41 anti-data-center measures over bills, water, and diesel backup. Power procurement, not messaging, will set the pace of buildout.",
+      "author": "James O'Donnell",
+      "readingMinutes": 5
+    },
+    {
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-08T10:22:04.000Z",
+      "topic": "AI",
+      "note": "A set of llama.cpp patches and Fractal-64 quantization compresses DeepSeek-V4-Flash from 76.87 GiB to 56.56 GiB at 1.71 bits per weight, fitting 284B total parameters into 64GB RAM with 256K context. Reported throughput is 44 tok/s prefill on a 16-core Zen 5 with no GPU. Open frontier-class MoE no longer needs a cluster to run.",
+      "author": "joshcsimmons",
+      "readingMinutes": 14
+    },
+    {
+      "title": "Fable 5.2 and Jagged AGI",
+      "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+      "source": "One Useful Thing",
+      "kind": "rss",
+      "publishedAt": "2026-11-09T19:04:26.000Z",
+      "topic": "AGI",
+      "note": "Mollick tests Claude Fable 5.2 across video generation, reverse-engineering a USB keyboard into six playable games, drafting a fundable business from 201 municipal agendas, and reconstructing Auden's 1941 syllabus. He grades it as almost-AGI on computer-only expert work: brilliant first drafts, unreliable at running the business alone. The jaggedness has moved from hallucinations to follow-through.",
+      "author": "Ethan Mollick",
+      "readingMinutes": 14
+    },
+    {
+      "title": "Aaronson-Ambainis Conjecture proved! (By AI, of course)",
+      "url": "https://scottaaronson.blog/?p=10295",
+      "source": "Scott Aaronson",
+      "kind": "rss",
+      "publishedAt": "2026-11-08T21:44:31.000Z",
+      "topic": "AI",
+      "note": "Physical Superintelligence reports a proof of the 2009 Aaronson-Ambainis conjecture with bound ~1/d^6, obtained with an internal Claude plus research harness and backed by a Lean certificate. Exposition by Blanc, Docter, Strassle and Tan is already circulating. It rules out superpolynomial quantum advantage for decision problems on random inputs, leaving Shor and physics simulation untouched.",
+      "author": "Scott",
+      "readingMinutes": 6
+    }
+  ],
+  "stats": {
+    "considered": 130,
+    "sources": 42,
+    "model": "muse-spark-1.3"
+  }
+}
