@@ -1,0 +1,94 @@
+{
+  "kind": "daily",
+  "date": "2026-11-10",
+  "slug": "2026-11-10",
+  "generatedAt": "2026-11-10T18:38:54.892Z",
+  "intro": "Evidence of AI accelerating AI forces a fight over what counts as recursive improvement.",
+  "pulse": {
+    "text": "Frontier work is now self-accelerating on record, with METR putting Anthropic at roughly twice its historical pace and forecasters pulling superhuman researcher timelines into 2027, even as credit markets price restraint with CoreWeave over 16% and hyperscalers cash-flow negative. Voters just backed 40 of 41 anti-data-center measures while sending a regulator in Pelosi's old seat to Congress, and coverage swings between that local backlash and the Jensen Huang investigation. Researchers are trying to make the risks measurable, from probit-regular persona shifts to cross-model interpretability transfer and swarm-based prompt-injection tests.",
+    "barometer": 78,
+    "reading": "METR 2x pace and 2027 SAR calls outweigh verification and control gains."
+  },
+  "items": [
+    {
+      "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All",
+      "url": "https://blog.aifutures.org/p/q35-timelines-update-looks-like-the",
+      "source": "AI Futures Project",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T16:15:14.000Z",
+      "topic": "AGI",
+      "note": "METR's estimate that Anthropic progress doubled (1.3-3x, ~80% AI-driven) implies 1.7x AI-attributable acceleration, five months ahead of the AI 2027 path. Lifland's team runs that through five extrapolations plus the filtered futures model to pull median SAR into early-to-mid 2027, with 35-65% odds of full white-collar automation before 2028. The shift matters because even the group's most bullish forecaster gave under 4% to this much acceleration showing up this soon.",
+      "author": "Eli Lifland",
+      "readingMinutes": 77
+    },
+    {
+      "title": "Iron Makes Iron",
+      "url": "https://www.hyperdimensional.co/p/iron-makes-iron",
+      "source": "Hyperdimensional",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T17:24:58.000Z",
+      "topic": "AI",
+      "note": "Ball separates routine weak recursion — iron making iron, software building software — from strong recursion where systems autonomously plan successors, which has no historical precedent. The METR 2x finding and Anthropic's S-1 language about dramatically accelerated progress do not by themselves demonstrate the second, especially with heavy redactions and compute growth as confounders. The distinction matters for policy: enforce actual human control without banning AI-for-AI work that underpins biomedicine and growth.",
+      "author": "Dean W. Ball",
+      "readingMinutes": 15
+    },
+    {
+      "title": "Is Persona Generalization Predictable?",
+      "url": "https://arxiv.org/abs/2611.12864v1",
+      "source": "arXiv cs.LG",
+      "kind": "arxiv",
+      "publishedAt": "2026-11-09T18:51:03.000Z",
+      "topic": "Alignment",
+      "note": "Fine-tuning that shifts persona in one domain shifts it elsewhere along a probit-linear curve, and the same line shows up across Qwen and Llama families, sizes, learning rates and durations. Moving along versus off the line depends on whether trainable parameters stay fixed. That regularity turns emergent misalignment from anecdote into something measurable before deployment.",
+      "author": "Olina Mukherjee, Arnav Goel, Aditi Raghunathan"
+    },
+    {
+      "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-10T03:20:06.000Z",
+      "topic": "Economics",
+      "note": "CoreWeave's 2032 bond over 16% and CDS above 1,100 bps joins rising protection costs even for Nvidia, Broadcom and Amazon, just as hyperscalers post negative quarterly free cash flow. Goldman counts $296 billion in hyperscaler debt this year with moratorium threats over 45% of planned US capacity. Credit is becoming the constraint on who gets to build what, not just technical feasibility.",
+      "author": "lxm",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "Google DeepMind",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T12:02:28.000Z",
+      "topic": "AI",
+      "note": "Gemini-powered agents generated six million lines of Lean to prove Signal's compiled code preserves forward secrecy and post-compromise recovery, with only 1% flagged for human review. The four-week effort is the first machine-checked implementation proof for a widely deployed protocol, and it caught two reintroduced real bugs. It shows automated verification scaling to production cryptography rather than toy code.",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Verified Compute Allocation Disclosures as a Foundational Governance Tool",
+      "url": "https://blog.aifutures.org/p/verified-compute-allocation-disclosures",
+      "source": "AI Futures Project",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T02:27:19.000Z",
+      "topic": "Alignment",
+      "note": "Pacing proposals that only delay training runs leave a software overhang that can burst later or leak, so Lifland makes the case for verifying the split between AI R&D, safety work and inference. Verified allocation disclosures would let auditors catch hidden compute and confirm slowdowns in software progress itself. Without that inventory plus allocation check, almost any input restriction is unenforceable.",
+      "author": "Eli Lifland",
+      "readingMinutes": 8
+    },
+    {
+      "title": "China’s AI Diplomacy Is Working",
+      "url": "https://www.foreignaffairs.com/china/chinas-ai-diplomacy-working",
+      "source": "Foreign Affairs",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "topic": "Geopolitics",
+      "note": "Remler traces three years of Beijing pairing safety-talk participation with a development-first pitch that casts US export controls as the barrier to cooperation. WAICO now counts 37 prospective members offered easier model access, while Chinese open-weight systems spread across the developing world. Washington heads into November talks needing to treat dialogue as competition, not a silo.",
+      "author": "Daniel Remler",
+      "readingMinutes": 10
+    }
+  ],
+  "stats": {
+    "considered": 275,
+    "sources": 57,
+    "model": "muse-spark-1.3"
+  }
+}
