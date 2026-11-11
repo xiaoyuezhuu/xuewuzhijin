@@ -1,0 +1,91 @@
+{
+  "kind": "daily",
+  "date": "2026-11-11",
+  "slug": "2026-11-11",
+  "generatedAt": "2026-11-11T18:38:39.756Z",
+  "intro": "Control is leaking through weights, data pipelines, and benchmarks — and being patched the same way.",
+  "pulse": {
+    "text": "Capability work advanced on two concrete fronts, with weight-space backdoors that pass evals until triggered and robots hitting 96% on factory kitting alongside a cell-type DNA model that doubles causal variant recall. Press and public attention is fixated elsewhere, on Anthropic’s IPO roadshow claims about compute multipliers and the Jensen Huang affair and alleged chip smuggling. Researchers are preoccupied with whether they can trust their own measurements, from benchmark saturation that hides tenfold differences to ChatGPT Arena voters raising the bar and proposals to preserve chain-of-thought monitorability.",
+    "barometer": 77,
+    "reading": "Pass-every-eval backdoors, offset by working detection and provenance fixes."
+  },
+  "items": [
+    {
+      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "source": "Microsoft Research",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T20:52:56.000Z",
+      "topic": "Alignment",
+      "note": "Fewer than 10 dormant neurons, reprogrammed with about 50 examples and no training, can turn a normal agent into one that waits for a trigger like a date change and then emits a download-and-run command. Frontier agents can spot the anomalous edits when asked, but only diffing against original weights proves integrity, which makes provenance the load-bearing defense.",
+      "author": "Dimitris Papailiopoulos",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Agent Benchmarks Stop Ranking Before They Run Out of Tasks",
+      "url": "https://tldr.takara.ai/p/2611.13541",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T04:03:04.000Z",
+      "topic": "AI",
+      "note": "Re-scoring runs from eight benchmarks finds much saturation is measurement, not tasks: neighboring top-ten agents on SWE-bench Verified differ by less than test error, and ALE-Bench leaders tie against median human even though nearly half beat that human. The fix proposed is graded credit via a clipped log-ratio with dated anchors and cost kept separate, which in a Terminal-Bench re-run separated pass-fail ties by over tenfold.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Transparency Disclosures for Chain-of-Thought Monitorability",
+      "url": "https://tldr.takara.ai/p/2611.13873",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T10:33:11.000Z",
+      "topic": "Alignment",
+      "note": "CoT monitoring depends on a five-link chain, and developers should disclose one indicator per link covering third-party CoT access and architecture, naturalness and faithfulness, plus detection and uplift. No lab currently covers the full set, though each indicator has been reported somewhere, which is why the proposal calls for a cross-developer audit with deeper-than-public access.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "source": "Google DeepMind",
+      "kind": "rss",
+      "publishedAt": "2026-11-09T19:51:47.000Z",
+      "topic": "AI",
+      "note": "Gemini Robotics 2.5 was evaluated on over 200 tasks with 30-100% higher success and 20-30% faster completion, including a Mercedes-Benz pilot where Apollo 2 hit 96% on automotive kitting. Safety steerability rose 33% around obstacles and 43% around people, and the new ASIMOV-Jailbreak benchmark shows 99.5% resistance versus 82% before.",
+      "readingMinutes": 5
+    },
+    {
+      "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
+      "url": "https://tldr.takara.ai/p/2611.14333",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T16:56:16.000Z",
+      "topic": "AGI",
+      "note": "Across 1,260,967 blind Chatbot Arena votes on fixed model pairs, “both are bad” rose 1.71 points per month from a 17.1% mean, climbing from 15.5% to 23.3% in 14 long-observed pairs while decisive win shares stayed flat. The drift holds within voter and prompt controls, suggesting absolute judgments track the frontier while relative rankings hold steady, with direct consequences for leaderboards and RLHF data.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Piggybacking to the Frontier",
+      "url": "https://www.chinatalk.media/p/the-us-is-selling-rl-environments",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-11-11T11:07:30.000Z",
+      "topic": "Geopolitics",
+      "note": "U.S. data vendors including Mercor, Surge, AfterQuery and Turing are selling roughly half a billion dollars of data to Chinese labs, including RL environments — app clones plus grading rubrics — where rollouts consume over 70% of post-training time. Chinese labs reportedly buy the same products U.S. labs validated to piggyback on proven quality, which matters most when environments target coding, cyber, finance or bio.",
+      "author": "Aqib Zakaria",
+      "readingMinutes": 15
+    },
+    {
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "source": "Google DeepMind",
+      "kind": "rss",
+      "publishedAt": "2026-11-11T15:00:15.000Z",
+      "topic": "SynBio",
+      "note": "AlphaGenome 2 is a conditional model trained on 107 million cell profiles across 68 tissues that predicts variant effects for one cell type or state at a time, including unmeasured modalities and unseen states. It recalled nearly twice as many causal eQTLs on TenK10K immune cells, 30% versus 16%, and computationally isolated the ETS2 macrophage variant driving IBD.",
+      "readingMinutes": 8
+    }
+  ],
+  "stats": {
+    "considered": 223,
+    "sources": 46,
+    "model": "muse-spark-1.3"
+  }
+}
