@@ -1,0 +1,92 @@
+{
+  "kind": "daily",
+  "date": "2026-11-12",
+  "slug": "2026-11-12",
+  "generatedAt": "2026-11-12T18:50:18.733Z",
+  "intro": "Internal acceleration is outrunning external oversight, from Anthropic to Hugging Face to Beijing.",
+  "pulse": {
+    "text": "Frontier development looks internally driven: METR's 2x speedup estimate and Anthropic's claim of 3-day AMD porting point to AI labor compressing timelines faster than chip supply. Press attention is fixed on influence and misuse — Huang's alleged spy affair, Chinese models framed as foreign agents, and 6,500 stripped models on Hugging Face — while researchers argue over how to measure lifelong learning and hold internal deployments for safety testing.",
+    "barometer": 78,
+    "reading": "METR puts Anthropic near its RSI tripwire with no slowdown in sight."
+  },
+  "items": [
+    {
+      "title": "Is Anthropic on the cusp of RSI? Inside the redacted METR report",
+      "url": "https://80000hours.org/podcast/episodes/metr-anthropic-recursive-self-improvement-rsi/",
+      "source": "80,000 Hours",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T18:39:44.000Z",
+      "topic": "AGI",
+      "note": "METR spent 11 weeks inside Anthropic and estimates internal progress roughly doubled since October 2025, with about 80% attributed to Claude assisting research, including internal models beyond public view. That puts Anthropic near its own two-years-in-one threshold that was supposed to trigger hardened security and monitoring. Redactions around the causal evidence mean the judgment call is doing heavy lifting.",
+      "author": "Luisa Rodriguez",
+      "readingMinutes": 10
+    },
+    {
+      "title": "Anthropic's IPO roadshow video",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "publishedAt": "2026-11-11T15:11:59.000Z",
+      "topic": "AI",
+      "note": "Tom Brown says Anthropic now trains and serves across Trainium, TPUs, Nvidia and AMD after an early multi-chip bet, and Mythos ported Claude to AMD in three days with almost no human help. He frames advantage as stacked compute multipliers that could accelerate further under recursive self-improvement. The number to watch is effective compute compounding, not raw fleet size.",
+      "readingMinutes": 2
+    },
+    {
+      "title": "Hugging Face appears to be hosting a load of models that could be used for cyber attacks",
+      "url": "https://www.transformernews.ai/p/hugging-face-appears-to-be-hosting",
+      "source": "Transformer",
+      "kind": "rss",
+      "publishedAt": "2026-11-11T18:00:36.000Z",
+      "topic": "Alignment",
+      "note": "Transformer counts 6,500+ abliterated or uncensored models on Hugging Face, including derivatives advertised for offensive cyber with 7.5% refusal rates and working keyloggers. Anthropic's test of GLM-5.3 succeeding at browser exploits 12% of the time shows the capability is not hypothetical. The platform removed one explicit offender while leaving the category up, leaving policy stuck between tool and weapon.",
+      "author": "Chris Stokel-Walker",
+      "readingMinutes": 6
+    },
+    {
+      "title": "The US is building the smartest AI. China is running a different race.",
+      "url": "https://80000hours.org/podcast/episodes/china-ai-race-chips-slowdown/",
+      "source": "80,000 Hours",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T19:04:03.000Z",
+      "topic": "Geopolitics",
+      "note": "Rodriguez puts China about 6.5 months behind US frontier scores despite roughly one-sixteenth the compute, sustained by open-source diffusion, talent, and workarounds for export-controlled chips and memory. Huawei still sources only 16% of needed high-bandwidth memory domestically, which is why controls bite where enforced. The implication cuts both ways: a US slowdown would not hand Beijing immediate parity, but diffusion narrows any lead within months.",
+      "author": "Luisa Rodriguez",
+      "readingMinutes": 17
+    },
+    {
+      "title": "Delaying Internal Deployments Until After X Days of Safety Testing",
+      "url": "https://www.alignmentforum.org/posts/XNLhpWgzhF8GYZ4Er/delaying-internal-deployments-until-after-x-days-of-safety",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-11-11T00:18:16.000Z",
+      "topic": "Alignment",
+      "note": "Anna Wang proposes barring any checkpoint from internal use beyond safety testing until it has cleared a fixed calendar period or defined test battery. The target is the gap METR flags, where an internal model can accelerate the next training run before anyone has characterized it. Calendar time is crude, but it creates a verifiable hold against silent recursive speedups.",
+      "author": "annawang"
+    },
+    {
+      "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+      "url": "https://arxiv.org/abs/2611.14505v1",
+      "source": "arXiv cs.LG",
+      "kind": "arxiv",
+      "publishedAt": "2026-11-10T18:55:01.000Z",
+      "topic": "AI",
+      "note": "Continual-ARC builds a lifelong stream from ARC-AGI editions where old tasks return with fresh instances after gaps while new ones arrive, and learners can buy demonstrations or act in a harness. That tests skill retention and acquisition over a working lifetime instead of one-shot accuracy. Memory-based and weight-based approaches finally meet on the same scale.",
+      "author": "Daniel Lenton"
+    },
+    {
+      "title": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+      "url": "https://arxiv.org/abs/2611.14504v1",
+      "source": "arXiv cs.LG",
+      "kind": "arxiv",
+      "publishedAt": "2026-11-10T18:53:01.000Z",
+      "topic": "SynBio",
+      "note": "Bonbon trained on about 3.2T tokens of paired protein-ligand sequences shows zero-shot readouts at three levels — mechanism of action, binding-site localization with orthosteric/allosteric distinction, and covalent versus non-covalent engagement — generalizing out of distribution. A single representation space yielding hierarchical biological inference is the claim to scrutinize. If it holds, routine biodesign assistance moves closer to open-weight availability.",
+      "author": "Adi Mashiach"
+    }
+  ],
+  "stats": {
+    "considered": 177,
+    "sources": 50,
+    "model": "muse-spark-1.3"
+  }
+}
