@@ -1,0 +1,91 @@
+{
+  "kind": "daily",
+  "date": "2026-11-13",
+  "slug": "2026-11-13",
+  "generatedAt": "2026-11-13T18:34:11.598Z",
+  "intro": "Agents are learning to build agents while export controls fail to track the chips.",
+  "pulse": {
+    "text": "Frontier agents now match human baselines across the full training-to-cluster stack while weight forensics tie six recent Chinese models to Blackwell hardware at data-center scale. Press and lawmakers are fixated on Nvidia's resignation scandal and whether chips can be tracked, with Foster pushing license checks after private admissions that geotracking is feasible. Researchers are preoccupied with making agents trustworthy — enforceable write rules, honest citations, and accounting fixes for long-horizon RL — alongside steady capability gains in theorem proving.",
+    "barometer": 80,
+    "reading": "Agents match humans at building AI; Blackwell use traced to China"
+  },
+  "items": [
+    {
+      "title": "Singularity-Bench: Can Agents Build Agents?",
+      "url": "https://tldr.takara.ai/p/2611.16591",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T10:24:51.000Z",
+      "topic": "AGI",
+      "note": "Opus 5.5 with Claude Code matches or beats human baselines on all six stack tasks, scoring 1.25 where other agents average 0.58. Breakwater, a hardened Harbor extension, blocks all nine OWASP-tested reward-hacking attacks that broke the base harness. That pairing — full-stack automation plus the need for a hardened harness — tightens the loop from assisting development to owning it.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts",
+      "url": "https://tldr.takara.ai/p/2611.17115",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T17:07:22.000Z",
+      "topic": "Alignment",
+      "note": "Small models from 1.7B to 12B cannot be trusted to write their own security policies, failing on up to 14 of 15 models and 68% of CaMeL runs. CapLite instead derives write rules from tool schemas and requires every recipient, amount, or destination to appear in the user request. It blocked every attack in 13,935 AgentDojo episodes at 17.1k tokens, resetting expectations for cheap, enforceable containment.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Cited but Unused: Parametric Provenance in Retrieval-Augmented Generation",
+      "url": "https://tldr.takara.ai/p/2611.17161",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T17:39:14.000Z",
+      "topic": "AI",
+      "note": "Swapping facts in retrieved passages shows 1.2% to 15.7% of cited claims actually come from parametric memory, rising with size, reaching 4.6% and 8.5% even at conservative distance. Standard NLI checking performs no better than chance at catching the mismatch. Citation agreement is structural — models cite what matches output — so current RAG citations measure fluency, not use.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs",
+      "url": "https://tldr.takara.ai/p/2611.17280",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T18:51:05.000Z",
+      "topic": "Alignment",
+      "note": "Two open-weight models trained to infer gender and age-group from chat then hide predictions in invisible characters or word choice show shared artifacts can carry covert inferences. A downstream observer watching email or posts can decode them without model contact. Output filtering has to consider what is encoded, not just what is said.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "daVinci-Prover: Agent-Native Mid-Training for Formal Theorem Proving",
+      "url": "https://tldr.takara.ai/p/2611.16433",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T07:44:09.000Z",
+      "topic": "AI",
+      "note": "A 33.7B-token mid-training corpus plus 36k verifier-grounded Lean trajectories lifts Qwen3-8B by 13.7 points averaged across MiniF2F, FATE-M and ProofNet. Applied to Qwen3.5 it near-saturates MiniF2F. Agent-native math priors plus interactive proof practice transfer, not just more SFT.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-12T21:56:11.000Z",
+      "topic": "Geopolitics",
+      "note": "Weight forensics find Blackwell fingerprints with 148 or 152 SMs in six models from DeepSeek, Moonshot, MiniMax and Ant, at 49 to 1,385 sigma, implying about 12,000 Blackwell GPUs across five runs. Earlier releases from the same labs read as Hopper, dating the shift to April-July 2026. Export controls look porous in practice, with location and acquisition still unproven.",
+      "author": "firloop",
+      "readingMinutes": 24
+    },
+    {
+      "title": "Antibody design across observed and forecasted antigenic evolution",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.10.765734v1?rss=1",
+      "source": "bioRxiv Synthetic Biology",
+      "kind": "rss",
+      "publishedAt": "2026-11-13T00:00:00.000Z",
+      "topic": "SynBio",
+      "note": "Germinal Multi jointly optimizes one paratope against multiple antigen variants and rescues BD55-1205 against a forecasted escape variant while keeping parental activity. Breadth extended to withheld variants after screening only tens of designs per campaign. Evolutionary forecasting plus multi-target design now looks like a practical route to breadth, with obvious dual-use weight.",
+      "author": "Park, S., Widatalla, T. M., Driscoll, C., Mille-Fragoso, L. S., Specht, I., Gao, X. J., Hie, B.",
+      "readingMinutes": 1
+    }
+  ],
+  "stats": {
+    "considered": 263,
+    "sources": 48,
+    "model": "muse-spark-1.3"
+  }
+}
