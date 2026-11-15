@@ -1,0 +1,93 @@
+{
+  "kind": "weekly",
+  "date": "2026-11-15",
+  "slug": "2026-W46",
+  "generatedAt": "2026-11-15T19:32:30.870Z",
+  "intro": "Evidence of AI accelerating itself collided with evidence that controls over chips and data are leaking.",
+  "pulse": {
+    "text": "Frontier labs are measuring AI doing roughly a quarter of their own R&D while independent tests show one stack can already match humans at building AI end-to-end. Press and Congress are translating that into chip-tracking bills, credit stress on neoclouds like CoreWeave above 16%, and fights over open-weight liability after the Hugging Face breach. Researchers are split between extrapolating a 2027 superhuman researcher and arguing the gains cost six times the spend for twice the pace.",
+    "barometer": 68,
+    "reading": "RSI speedup measured, but gains per research dollar fell"
+  },
+  "items": [
+    {
+      "title": "Is Anthropic on the cusp of RSI? Inside the redacted METR report",
+      "url": "https://80000hours.org/podcast/episodes/metr-anthropic-recursive-self-improvement-rsi/",
+      "source": "80,000 Hours",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T18:39:44.000Z",
+      "topic": "AGI",
+      "note": "METR spent 11 weeks inside Anthropic and estimates capabilities on well-specified tasks are improving about twice as fast as a year ago, with roughly 80% of the lift from Claude doing research work — up from near zero to leading 26% of R&D by August. That puts Anthropic at its own Responsible Scaling Policy line of two years of progress in one, which is why timelines forecasters moved superintelligent-researcher medians into 2027.",
+      "author": "Luisa Rodriguez",
+      "readingMinutes": 10
+    },
+    {
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-12T21:56:11.000Z",
+      "topic": "Geopolitics",
+      "note": "Recovery of initialization seeds from public weights shows six releases from DeepSeek, Moonshot, MiniMax and Ant match Blackwell B200/B300 or GB200/GB300 layouts at 49 to 1,385 sigma, while 24 control models with disclosed hardware all match. The two largest runs imply thousands of Blackwell cards for months, which turns chip-diversion claims from leaks into something checkable in the weights themselves without showing where the cards sat.",
+      "author": "firloop",
+      "readingMinutes": 24
+    },
+    {
+      "title": "Singularity-Bench: Can Agents Build Agents?",
+      "url": "https://tldr.takara.ai/p/2611.16591",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-12T10:24:51.000Z",
+      "topic": "AI",
+      "note": "Singularity-Bench asks agents to rebuild pre-training, post-training, inference and orchestration from minimal starts and grades them against human baselines on identical hardware, plus a Breakwater harness that blocks tested reward hacks. Opus 5.5 with Claude Code scores 1.25 and clears all six tasks while the other ten agents average 0.58, making automated AI development a measured gap rather than a metaphor.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Are we witnessing an intelligence explosion?",
+      "url": "https://marginalrevolution.com/marginalrevolution/2026/11/are-we-witnessing-an-intelligence-explosion.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=are-we-witnessing-an-intelligence-explosion",
+      "source": "Marginal Revolution",
+      "kind": "rss",
+      "publishedAt": "2026-11-13T18:39:00.000Z",
+      "topic": "Economics",
+      "note": "Luis Garicano and Alex Imas compare capability pace before and after October 2025 and find 1.91 times faster progress alongside 6.19 times higher R&D spend and 3.10 times more staff, implying about 69% lower gains per dollar. The arithmetic does not disprove an intelligence explosion, but it requires any such claim to explain why inputs scaled so much faster than output.",
+      "author": "Tyler Cowen"
+    },
+    {
+      "title": "Iron Makes Iron",
+      "url": "https://www.hyperdimensional.co/p/iron-makes-iron",
+      "source": "Hyperdimensional",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T17:24:58.000Z",
+      "topic": "Alignment",
+      "note": "Dean Ball separates weak recursion, where AI helps make better AI as railroads helped lay railroads, from strong recursion, where systems autonomously plan successors with little human oversight. He accepts laws to preserve practical human control while warning that treating all AI-for-AI work as dangerous repeats the mistake of pathologizing energy use itself.",
+      "author": "Dean W. Ball",
+      "readingMinutes": 15
+    },
+    {
+      "title": "Piggybacking to the Frontier",
+      "url": "https://www.chinatalk.media/p/the-us-is-selling-rl-environments",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-11-11T11:07:30.000Z",
+      "topic": "AI",
+      "note": "American data vendors including Mercor, Surge, Turing and AfterQuery sell roughly half a billion dollars of tasks and grading rubrics to Chinese labs, covering coding, cyber, finance and biology. Because rollouts consume over 70% of RL post-training time, buying the same environments Anthropic and OpenAI validated lets followers piggyback on selection and calibration, not just distill outputs.",
+      "author": "Aqib Zakaria",
+      "readingMinutes": 15
+    },
+    {
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "Google DeepMind",
+      "kind": "rss",
+      "publishedAt": "2026-11-10T12:02:28.000Z",
+      "topic": "Alignment",
+      "note": "A multi-model agent system wrote over six million lines of Lean to prove Signal's deployed code preserves confidentiality before and after temporary compromise, with humans reviewing about 1% flagged as uncertain. The four-week effort caught two reintroduced real bugs in controls, showing automated proof can reach implementation depth that used to take expert teams years.",
+      "readingMinutes": 3
+    }
+  ],
+  "stats": {
+    "considered": 48,
+    "sources": 24,
+    "model": "muse-spark-1.3"
+  }
+}
