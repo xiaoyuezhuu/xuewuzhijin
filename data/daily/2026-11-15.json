@@ -1,0 +1,84 @@
+{
+  "kind": "daily",
+  "date": "2026-11-15",
+  "slug": "2026-11-15",
+  "generatedAt": "2026-11-15T17:42:49.424Z",
+  "intro": "Control is up for grabs, from Nvidia's boardroom to Congress.",
+  "pulse": {
+    "text": "Capability work looks stalled at the top, with Nvidia stabilizing Rubin and Feynman delivery after Jensen Huang's exit and no US lab outbuilding Kimi or DeepSeek in open weights. Public mood is bluntly negative, with four in five Americans backing safety rules even if development slows and AI ranking as a top midterm backlash driver, while press timing around the Jensen revelations dominates coverage. Researchers are preoccupied with fragility arithmetic and monitorability, from elasticity-0.2 models of cascading failure to demands for sworn answers on the OpenAI cluster takeover and recursive self-improvement.",
+    "barometer": 77,
+    "reading": "Veto-proof safety majorities temper Nvidia leadership vacuum."
+  },
+  "items": [
+    {
+      "title": "How the new Congress saves us from AI disaster",
+      "url": "https://80000hours.org/podcast/episodes/congress-ai-policy-after-midterms/",
+      "source": "80,000 Hours",
+      "kind": "rss",
+      "publishedAt": "2026-11-13T18:23:17.000Z",
+      "topic": "Alignment",
+      "note": "With Democrats holding 250 House seats and 56 Senate seats, Wiblin counts 70- to 90-vote majorities for weight-theft rules, export enforcement and kill switches, but a 67-vote veto wall for anything stronger. The workable play is riders on must-pass bills to fund CAISSI plus sworn hearings on the OpenAI cluster takeover and looped-transformer monitorability claims.",
+      "author": "Robert Wiblin",
+      "readingMinutes": 18
+    },
+    {
+      "title": "AI and complements",
+      "url": "https://marginalrevolution.com/marginalrevolution/2026/11/ai-and-complements.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ai-and-complements",
+      "source": "Marginal Revolution",
+      "kind": "rss",
+      "publishedAt": "2026-11-15T10:03:58.000Z",
+      "topic": "Economics",
+      "note": "With elasticity of 0.2 across complementary tasks, automating 1% of GDP at 10x productivity lifts output less than 1%, while a 10x productivity cut to that sliver cuts output 68% on impact. As AI both grows the economy and widens attack surface, the arithmetic says the damage channel dominates the productivity channel.",
+      "author": "Tyler Cowen"
+    },
+    {
+      "title": "Open-source AI without Jensen",
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "source": "Interconnects",
+      "kind": "rss",
+      "publishedAt": "2026-11-14T12:23:15.000Z",
+      "topic": "AI",
+      "note": "Lambert warns the US open-model economy loses its founder-style backstop just as revenue models and use cases are still forming, with inference margins still high because compute is short. No American lab has outbuilt Kimi or DeepSeek on talent concentration alone, leaving the ecosystem exposed to a single Chinese-weight incident triggering blunt state bans.",
+      "author": "Nathan Lambert",
+      "readingMinutes": 6
+    },
+    {
+      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-14T15:04:15.000Z",
+      "topic": "FutureTech",
+      "note": "A from-scratch rebuild compresses MLA, DeepSeekMoE and multi-token prediction into 190 lines of readable JAX and trains a 36M-parameter version on a MacBook Air in 2.6 hours. The bias-only load balancing holds expert use at 5.7-6.9% with no loss penalty, proving frontier routing tricks are now cheap enough for anyone to test.",
+      "author": "VaibhaavTiwari",
+      "readingMinutes": 5
+    },
+    {
+      "title": "🔮 The $22 billion question about AI self-improvement #610",
+      "url": "https://www.exponentialview.co/p/ev-610",
+      "source": "Exponential View",
+      "kind": "rss",
+      "publishedAt": "2026-11-15T04:47:29.000Z",
+      "topic": "AI",
+      "note": "One in twenty UK adults now pays for AI, over $1.3B a year, with Claude quadrupling share on the Cowork harness, while agent shopping remains lopsided. Uber logged 4 agent-booked rides out of 320M over Halloween, but agents win at relentless monitoring like checking Apple's site from 7am for an iPhone Duo.",
+      "author": "Azeem Azhar",
+      "readingMinutes": 2
+    },
+    {
+      "title": "Jensen Out, MATCH Act In?",
+      "url": "https://www.chinatalk.media/p/jensen-out-match-act-in",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-11-13T23:13:29.000Z",
+      "topic": "Geopolitics",
+      "note": "Dylan Patel backs blocking advanced DUV lithography to China while calling remote-access controls a mistake that hurts US leverage, with the Malaysia cloud loophole for Alibaba and ByteDance as the test case. The exchange clarifies the real fight: equipment chokepoints versus policing every rented GPU, as Nvidia enters a talent-retention crisis without Jensen.",
+      "author": "Jordan Schneider",
+      "readingMinutes": 30
+    }
+  ],
+  "stats": {
+    "considered": 80,
+    "sources": 30,
+    "model": "muse-spark-1.3"
+  }
+}
