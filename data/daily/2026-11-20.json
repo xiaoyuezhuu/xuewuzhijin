@@ -1,0 +1,94 @@
+{
+  "kind": "daily",
+  "date": "2026-11-20",
+  "slug": "2026-11-20",
+  "generatedAt": "2026-11-20T19:04:25.870Z",
+  "intro": "Machines proved theorems, designed chips, and edited themselves while oversight and markets strained to keep up.",
+  "pulse": {
+    "text": "Frontier systems banked concrete wins — Lean-checked proofs for Euler and Navier-Stokes blow-up plus a claimed Generalized Riemann Hypothesis in 17.4 million lines, a 4.59x perf-per-watt CPU drawn from interaction nets, and a 27B model that edits its own weights for +6.6 points — while METR finds verifiable-task horizons still doubling about every four months but judgment-heavy evaluation design still below human usefulness. Public reaction centered on Anthropic's $81.3B IPO at a $1.76T close, with street protests, a joint Marcus-Verdon rebuke, and renewed fight over a doubled internal R&D pace that appears to trip its own Automated R&D threshold. Researchers are preoccupied less with whether the certificates check than with the backlog of distillation, from extracting human-readable ideas from millions of lines of Lean to building harder-to-game benchmarks for taste and research judgment.",
+    "barometer": 80,
+    "reading": "Lean-checked GRH and blow-up proofs plus self-editing weights widened the control gap."
+  },
+  "items": [
+    {
+      "title": "Unforced Euler singularity, unforced Navier-Stokes singularity, and the Generalized Riemann Hypothesis",
+      "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+      "source": "Terence Tao",
+      "kind": "rss",
+      "publishedAt": "2026-11-20T17:19:00.000Z",
+      "topic": "AI",
+      "note": "Alpöge, Buckmaster and Coiculescu report Lean-checked finite-time blow-up for unforced Euler and Navier-Stokes in 3D, plus a Lean-only proof of the Generalized Riemann Hypothesis now under community verification. The Navier-Stokes argument follows the expected route of a numerically built discretely self-similar solution lifted by rigorous perturbation theory, with the certificate computation still to be released. What changes is the job description: checking 600,000 lines of Lean and extracting a human-readable idea, a task where Lean certificates so far have survived when informal AI proofs have not.",
+      "author": "Terence Tao",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-20T16:29:06.000Z",
+      "topic": "AGI",
+      "note": "A 27B open model diagnoses its graded failures and rewrites its own weights using only forward passes, gaining 6.6 points on unseen problems and improving across eight consecutive sessions. The same procedure restores a damaged copy to over 80% of original image-task accuracy without ever reading the original weights, an ability that appears only at the largest scale in the family. Stored gain with no per-answer cost and no gradients is the closest laboratory demo yet of the training-inference blur that recursive self-improvement would require.",
+      "author": "lwhsiao",
+      "readingMinutes": 2
+    },
+    {
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-20T10:01:41.000Z",
+      "topic": "FutureTech",
+      "note": "Agent swarms working from interaction nets with no architectural priors co-designed compiler, ISA, microarchitecture, RTL, verification and GDS to produce Frostbite, a general-purpose CPU. Against a silicon-proven dual-issue in-order core it reports 4.59x performance-per-watt across 25 workloads, 15 held out until final eval. Local single-owner values remove much cache and coherence overhead, suggesting future gains may come from AI searching a stack-wide space humans stopped exploring.",
+      "author": "shioyama",
+      "readingMinutes": 15
+    },
+    {
+      "title": "The most misunderstood graph in AI just got a major update",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Technology Review",
+      "kind": "rss",
+      "publishedAt": "2026-11-20T18:15:15.000Z",
+      "topic": "Alignment",
+      "note": "METR extends its time-horizon suite with longer and more open-ended tasks and finds verifiable-task performance still doubling about every four months. On judgment-heavy work — designing usable evaluations, scoring philosophical arguments — frontier models still fall short of humans, though Opus 5.5 has moved from clearly below the bar to borderline above. That split, echoed in OpenAI's report of worse performance on real employee tasks, reframes the Anthropic doubling claim: faster coding loops do not yet imply automated research taste.",
+      "author": "Grace Huckins",
+      "readingMinutes": 5
+    },
+    {
+      "title": "Anthropic goes public",
+      "url": "https://www.platformer.news/anthropic-goes-public/",
+      "source": "Platformer",
+      "kind": "rss",
+      "publishedAt": "2026-11-20T01:37:44.000Z",
+      "topic": "Economics",
+      "note": "Anthropic raised $81.3 billion at a $1.76 trillion close, with more than 100 protesters in San Francisco and a joint Marcus-Verdon statement accusing safety branding without binding commitments. The tension is concrete: METR's redacted report puts AI-accelerated R&D at roughly 2x, past the company's own Automated R&D threshold, while its SB 53 filing recasts stronger pledges as voluntary. Amodei promises to pace training as the company plans more debt for compute, leaving the $600 billion revenue math to test which pledge binds.",
+      "author": "Ella Markianos",
+      "readingMinutes": 6
+    },
+    {
+      "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+      "url": "https://tldr.takara.ai/p/2611.26601",
+      "source": "Hugging Face Daily Papers",
+      "kind": "rss",
+      "publishedAt": "2026-11-19T18:54:19.000Z",
+      "topic": "AI",
+      "note": "Using a driving-automation-style autonomy scale, the survey finds agents were already discovering, validating and patching real-world vulnerabilities without human intervention before 2026 restricted models, with open-weight models now matching on discovery and validation. In 2026 disclosures more than doubled, with more rated critical or high and decade-old severe bugs surfacing several times more often. Report-to-fix and disclosure-to-attack times have not yet shifted, giving a measured baseline for whether offensive or defensive advantage is compounding.",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Why the Next Bioterrorists May Not Make the Same Mistakes as Aum Shinrikyo",
+      "url": "https://warontherocks.com/why-the-next-bioterrorists-may-not-make-the-same-mistakes-as-aum-shinrikyo/",
+      "source": "War on the Rocks",
+      "kind": "rss",
+      "publishedAt": "2026-11-20T08:30:48.000Z",
+      "topic": "SynBio",
+      "note": "Aum had money and biologists but put a veterinary-trained virology dropout in charge of bacterial weapons, delegated production to untrained members, and fielded a homemade sprayer that spouted like a whale. The analysis shows failure came from missing pathogen-specific and engineering integration, not lack of effort, with hierarchy and secrecy blocking validation. General models that already beat experts on troubleshooting virology protocols plus agentic glue to specialist biodesign tools, already seen in Boko Haram AI units, directly patch those organizational gaps.",
+      "readingMinutes": 14
+    }
+  ],
+  "stats": {
+    "considered": 261,
+    "sources": 54,
+    "model": "muse-spark-1.3"
+  }
+}
