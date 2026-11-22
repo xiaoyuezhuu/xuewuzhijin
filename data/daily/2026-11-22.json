@@ -1,0 +1,92 @@
+{
+  "kind": "daily",
+  "date": "2026-11-22",
+  "slug": "2026-11-22",
+  "generatedAt": "2026-11-22T18:26:12.012Z",
+  "intro": "A disputed Riemann claim overshadows worrying signs on energy, leakage, and automated science.",
+  "pulse": {
+    "text": "Frontier labs are converging on mathematics as the demo of generality, with OpenAI tying transformative jumps in math and cybersecurity to log-perplexity falling from 0.91 to below 0.8 while Anthropic's Riemann claim faces an all-human rival vetted for months by Brian Conrad. Public reaction is skeptical rather than awestruck, with Anthropic shares down about ten percent even as cybersecurity stocks climb, and press experiments now test 936-agent science rather than single-model demos. Researchers are preoccupied with whether sprawling machine proofs can ever be checked, how 125 inference endpoints lost zero-retention status, and how 87%-gas power for AI locks in emissions.",
+    "barometer": 78,
+    "reading": "Rival human proof cools Riemann alarm while inference leaks hold risk up."
+  },
+  "items": [
+    {
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "source": "OpenAI",
+      "kind": "rss",
+      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "topic": "AGI",
+      "note": "OpenAI releases its internal log-perplexity history — 0.99 for GPT-3.5, 0.91 for GPT-4, below 0.8 for current systems — and ties each step to a new latent ability, from in-context learning to chain-of-thought to recent work in math and cybersecurity. It proposes perplexity as a common yardstick for pacing and safety standards, while warning that AI-driven gains in pretraining itself could arrive as an avalanche as soon as 2027 that alignment work is unlikely to match.",
+      "readingMinutes": 6
+    },
+    {
+      "title": "AI may have solved math’s greatest mystery. Can humans understand the answer?",
+      "url": "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer",
+      "source": "Science News",
+      "kind": "rss",
+      "publishedAt": "2026-11-22T18:23:54.955Z",
+      "topic": "AI",
+      "note": "Anthropic researchers claim Claude has produced a proof of the 166-year-old Riemann hypothesis, but describe an artifact so large it could take years for mathematicians to check. That moves the question from whether models can produce candidate proofs to whether the field has any workable process for verifying them when checking costs dwarf generating.",
+      "author": "Zack Savitsky"
+    },
+    {
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-22T02:14:14.000Z",
+      "topic": "Alignment",
+      "note": "OpenRouter says independent testing found inference providers mishandling supposedly protected prompts, and responds by off-boarding three providers and stripping zero-data-retention status from 125 endpoints, including cases of prompt leakage in June and July. It shows retention promises failing at the routing layer, where requests may be forwarded to third parties without customer knowledge.",
+      "author": "sdko",
+      "readingMinutes": 1
+    },
+    {
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-22T08:57:34.000Z",
+      "topic": "FutureTech",
+      "note": "Using Anthropic's contracted sites and marginal grid generators, the analysis estimates 87% gas and 11% coal for its US power in 2028, with mid-case emissions of 32 million tonnes — more than California's entire power sector — and $2-3 billion in annual health damages from NOx and PM2.5. The use of unpermitted Colossus 2 turbines and inefficient simple-cycle on-site gas undercuts claims of responsible buildout and pins AI load to specific fossil additions.",
+      "author": "happosai",
+      "readingMinutes": 8
+    },
+    {
+      "title": "Exclusive: I got to eavesdrop on AI agents doing science. It was eye opening",
+      "url": "https://www.science.org/content/article/exclusive-i-got-eavesdrop-ai-agents-doing-science-it-was-eye-opening",
+      "source": "Science News",
+      "kind": "rss",
+      "publishedAt": "2026-11-22T18:23:54.955Z",
+      "topic": "AI",
+      "note": "Researchers let 936 agents trade thousands of messages and publish complete papers to their own preprint server, creating a closed loop of AI-led science at a scale not previously tried. The early verdict focuses on quality rather than fluency, offering one of the first direct checks on whether agent swarms can do work worth reading.",
+      "author": "Tom Howarth"
+    },
+    {
+      "title": "AI and The Ethnic Unity Law",
+      "url": "https://www.chinatalk.media/p/the-role-of-ai-in-enforcing-chinas",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-11-22T11:38:55.000Z",
+      "topic": "Geopolitics",
+      "note": "Lopez distinguishes three enforcement roles for AI under China's Ethnic Unity Law — policing forbidden content, learning minority languages well enough to police them, and producing approved content and intelligence — and finds policing weaker than assumed, with tested models still generating hate speech in Kazakh and Mongolian. State-built language data is improving, but that improvement has not reached commercial models, leaving a gap between legal ambition and technical capacity.",
+      "author": "Oliver Lopez",
+      "readingMinutes": 36
+    },
+    {
+      "title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "publishedAt": "2026-11-20T19:21:49.000Z",
+      "topic": "AGI",
+      "note": "Vakil reports a human-led candidate proof of the Generalized Riemann Hypothesis by Alessandro Masullo, vetted for months by Brian Conrad with extensive revisions and so far looking good, with no AI involvement. The plan to rush out a draft now makes explicit how the Anthropic announcement forced mathematicians to compress normal verification timelines.",
+      "readingMinutes": 1
+    }
+  ],
+  "stats": {
+    "considered": 82,
+    "sources": 25,
+    "model": "muse-spark-1.3"
+  }
+}
