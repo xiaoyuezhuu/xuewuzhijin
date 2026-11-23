@@ -1,0 +1,93 @@
+{
+  "kind": "daily",
+  "date": "2026-11-23",
+  "slug": "2026-11-23",
+  "generatedAt": "2026-11-23T22:34:03.097Z",
+  "intro": "Controls are leaking while measurement wobbles and agents rewrite science, work, and government.",
+  "pulse": {
+    "text": "Frontier work is shifting from raw scale to verified search and plumbing: agent teams proved Lean-checked quantum circuits 12-fold cheaper while residual-routing cut transformer depth by nearly a third, even as 185 million illicit Claude queries show Chinese labs distilling at industrial scale. Press conversation is louder about money and control than models — Anthropic's $1.5 trillion IPO minting hundreds of centimillionaires, stalled killer-robot talks extended to 2028, and threats to tax overseas data centers. Researchers are preoccupied with whether any number can be trusted, with METR finding judgment tasks resist automation and audits showing harnesses alone swing scores by 30 points.",
+    "barometer": 77,
+    "reading": "Black-market distillation confirmed, judgment tasks still resist."
+  },
+  "items": [
+    {
+      "title": "How to build and maintain an agentic evaluation",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "topic": "Alignment",
+      "note": "Terminal-Bench scores swung 29.9 points with the model fixed when only the harness changed, and 98.2% of model-benchmark scores are still reported by a single party. The guide walks one agentic task through eight steps — instruction, harness, environment, rollout, verifier, trace — to show where scores leak. Open-sourcing those parts is what makes a claim checkable instead of performative.",
+      "readingMinutes": 33
+    },
+    {
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "source": "Google DeepMind",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T16:59:40.000Z",
+      "topic": "AI",
+      "note": "Separate Gemini 4 teams proposed circuit optimizations that Lean then proved correct, cutting fusion simulation cost 11.8-fold and memory from 5,650 to 4,338 logical qubits, with smaller wins on P450 and photochemistry. A 290-fold speedup on arcsin state-loading and 2.57-fold on Grover came from the same loop. The pattern matters more than any number: agents search, a prover guarantees correctness, humans set problems.",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Management consulting is not a thin wrapper on intelligence",
+      "url": "https://www.normaltech.ai/p/management-consulting-is-not-a-thin",
+      "source": "AI Snake Oil",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T20:12:32.000Z",
+      "topic": "Economics",
+      "note": "Consulting output looks like analysis AI already does, but clients also buy scope-setting, stakeholder coordination, board-level credibility, and someone to blame. Training judgment has lagged analysis gains, and past general-purpose tech expanded consulting by creating integration work. That reframes displacement: cheaper analysis raises demand for help with reorganization, including AI deployment itself.",
+      "author": "Sayash Kapoor",
+      "readingMinutes": 20
+    },
+    {
+      "title": "Supercharging transformer residual connections",
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "source": "Google Research",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T17:21:12.000Z",
+      "topic": "AI",
+      "note": "Standard residuals add inputs blindly and dilute early detail; DeepCrossAttention lets each token attend across prior layers with a tiny per-layer router. It hit baseline quality in one-fifth the steps and matched a 42-layer transformer with 30 layers, adding under 0.2% parameters. Retrofitted onto a trained model it still cut perplexity, suggesting architecture gains without full retraining.",
+      "readingMinutes": 5
+    },
+    {
+      "title": "Inside the Black Market for America’s Artificial Intelligence",
+      "url": "https://www.lawfaremedia.org/article/inside-the-black-market-for-america-s-artificial-intelligence",
+      "source": "Lawfare",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T19:00:03.000Z",
+      "topic": "Geopolitics",
+      "note": "Resellers in Beijing openly sell Claude and ChatGPT access via tens of thousands of fake accounts, with 80,000+ servers counted and 185 million Claude exchanges tied to three Chinese labs in three months. Moonshot and DeepSeek allegedly routed live user traffic through Claude to distill it, capturing real-query distribution Americans cannot legally replicate. That turns export controls into a sieve — for capability catch-up, economic uplift, and safeguard evasion at once.",
+      "author": "Ibrahim Dagher, Kevin Xiao, Tal Feldman",
+      "readingMinutes": 10
+    },
+    {
+      "title": "The Double Alignment Problem: Civil-Military Relations in the Age of Artificial Intelligence",
+      "url": "https://warontherocks.com/the-double-alignment-problem-civil-military-relations-in-the-age-of-artificial-intelligence/",
+      "source": "War on the Rocks",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T08:30:35.000Z",
+      "topic": "Alignment",
+      "note": "The military and frontier models both demand autonomy, evaluate themselves, and resist outside monitoring while invoking geopolitical urgency. Constitutional AI borrows the language of constitutionalism but leans on values over enforceable rules, with vague bars on illegitimate power grabs. Huntington and Feaver's old answer — professionalism plus intrusive monitoring that mostly worked — hints at what a workable control regime would actually require.",
+      "author": "Theo Lipsky",
+      "readingMinutes": 14
+    },
+    {
+      "title": "The Agentic State",
+      "url": "https://www.chinatalk.media/p/the-agentic-state",
+      "source": "ChinaTalk",
+      "kind": "rss",
+      "publishedAt": "2026-11-23T11:58:38.000Z",
+      "topic": "AI",
+      "note": "Estonia's ex-CIO argues cheaper cognition will flood governments with FOIA requests, permits, and grant filings until services break. The choice is more CAPTCHAs and in-person checks or rebuilding services for agents on both sides, as Diia, Singaporean vibe-coded tools, and Estonian procurement pilots attempt. Citizens with coding agents may now hold better tech than the agencies serving them, which decides whether administration speeds up or seizes.",
+      "author": "Jordan Schneider",
+      "readingMinutes": 34
+    }
+  ],
+  "stats": {
+    "considered": 132,
+    "sources": 35,
+    "model": "muse-spark-1.3"
+  }
+}
