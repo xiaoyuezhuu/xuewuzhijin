@@ -1,0 +1,94 @@
+{
+  "kind": "daily",
+  "date": "2026-11-25",
+  "slug": "2026-11-25",
+  "generatedAt": "2026-11-25T20:29:32.158Z",
+  "intro": "Machines proved century-old theorems while export controls failed and pretraining accelerated.",
+  "pulse": {
+    "text": "Frontier systems banked Lean-checked proofs for Riemann, VP≠VNP and ω=9/4 while Google listed unconditional factoring results, and OpenAI's held-out loss fell seven times faster since January. Press and Congress are fixed on the Megaspeed smuggling network and Anthropic's $81B IPO, with lawsuits invoking the Hugging Face escape. Researchers are organizing a polymath to humanize 17-million-line proofs and arguing whether perplexity gains foreshadow a broader capability surge.",
+    "barometer": 78,
+    "reading": "Lean-checked super-proofs plus crypto-relevant algorithms and 7x faster pretraining."
+  },
+  "items": [
+    {
+      "title": "HOLY SHIT HOLY SHIT HOLY SHIT HOLY SHIT",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "source": "Scott Aaronson",
+      "kind": "rss",
+      "publishedAt": "2026-11-25T19:01:13.000Z",
+      "topic": "AI",
+      "note": "OpenAI and Anthropic posted Lean-checked proofs that VP ≠ VNP needs exp(Ω(log^{4/3} n)), that matrix multiplication exponent ω equals 9/4, and that Fourier needs N(log N)^{1/2+o(1)} gates. Aaronson reports the lower bounds evade natural-proofs barriers by compression plus diagonalization and says labs privately hold crypto-breaking algorithms. That turns mathematics from drip-feed to bulk download and puts P ≠ NP within plausible reach.",
+      "author": "Scott",
+      "readingMinutes": 6
+    },
+    {
+      "title": "An Anthropic mathematician just solved math’s most famous problem",
+      "url": "https://www.understandingai.org/p/an-anthropic-mathematician-just-solved",
+      "source": "Understanding AI",
+      "kind": "rss",
+      "publishedAt": "2026-11-24T21:43:33.000Z",
+      "topic": "AGI",
+      "note": "Levent Alpöge with Claude released a 17-million-line Lean proof of the Riemann Hypothesis, independently checkable, alongside a stronger Navier-Stokes result that eclipsed OpenAI's September proof. Forecasters had put Riemann this year near 10% and Tao had guessed 2050. The gap between totemic math success and everyday reliability now frames the debate over whether such reasoning generalizes or compounds into faster AI research.",
+      "author": "Kai Williams",
+      "readingMinutes": 4
+    },
+    {
+      "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+      "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-25T13:33:07.000Z",
+      "topic": "AI",
+      "note": "Google's Cogentic directory lists November 25 papers claiming unconditional factoring in L_N[1/3,O(1)], sub-quasipolynomial discrete logs in fixed characteristic, and deterministic subexponential factoring. The titles alone, if the Lean certificates hold, collapse hardness assumptions behind deployed cryptography. They give substance to warnings that labs are already holding crypto-relevant bombshells.",
+      "author": "rgwohlbold",
+      "readingMinutes": 1
+    },
+    {
+      "title": "Interpreting a recent acceleration in pretraining loss",
+      "url": "https://metr.org/blog/2026-11-24-interpreting-a-recent-acceleration-in-pretraining-loss/",
+      "source": "METR",
+      "kind": "rss",
+      "publishedAt": "2026-11-24T08:00:00.000Z",
+      "topic": "AGI",
+      "note": "OpenAI shared base-model log-perplexity for 13 models since GPT-3.5 on a fixed codebase holdout, showing loss falling about seven times faster since early 2026. METR notes the 3-year drop from GPT-3.5 to GPT-4.1 would repeat in 6.5 months at this pace, with no matching jump in Epoch's capability index. Whether that reflects overfitting, recipe change, or AI-accelerated R&D determines if capabilities are about to inflect.",
+      "readingMinutes": 5
+    },
+    {
+      "title": "AI may soon change what it means to be a theoretical physicist",
+      "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "source": "Ars Technica Science",
+      "kind": "rss",
+      "publishedAt": "2026-11-25T12:00:28.000Z",
+      "topic": "AI",
+      "note": "Suvrat Raju built TheoPhysEval from 50 unpublished problems that take experts a day, then found GPT-6 Astra solved 49 of 50 for under $3 each and corrected human solutions. A Turkish physicist's year-long thesis was reportedly reproduced in 10 hours, and Witten and Maldacena now credit models. Calculation is becoming disposable, leaving experiment and conceptual framing as the scarce human contribution.",
+      "author": "Dan Kagan-Kans, Understanding AI",
+      "readingMinutes": 17
+    },
+    {
+      "title": "The Real Nvidia Scandal",
+      "url": "https://www.foreignaffairs.com/china/real-nvidia-scandal-kilcrease-chilukuri",
+      "source": "Foreign Affairs",
+      "kind": "rss",
+      "publishedAt": "2026-11-24T09:00:00.000Z",
+      "topic": "Geopolitics",
+      "note": "Kilcrease and Chilukuri estimate up to a third of China's AI compute comes from smuggled chips, with Nvidia Blackwell about seven times Huawei Ascend and frontier models jumping from 14% to 85% on professional tasks since 2024. They trace the Megaspeed $4B pipeline to loopholes, remote access, and distillation plus Trump-era accommodation. The argument is that compute advantage is being squandered faster than labs are extending it.",
+      "author": "Emily Kilcrease, Vivek Chilukuri",
+      "readingMinutes": 11
+    },
+    {
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI",
+      "kind": "rss",
+      "publishedAt": "2026-11-24T13:00:00.000Z",
+      "topic": "SynBio",
+      "note": "GPT-6 models designed new binders and sequences by reasoning and code alone, matching specialized tools on most of 14 computational tasks and following prompts for binding site and helix count. With Onava, at least one design bound for each of five targets and redesigned antibodies retained binding. Generalist prompting now substitutes for bespoke bio-model expertise.",
+      "readingMinutes": 18
+    }
+  ],
+  "stats": {
+    "considered": 266,
+    "sources": 52,
+    "model": "muse-spark-1.3"
+  }
+}
