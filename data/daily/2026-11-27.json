@@ -1,0 +1,94 @@
+{
+  "kind": "daily",
+  "date": "2026-11-27",
+  "slug": "2026-11-27",
+  "generatedAt": "2026-11-27T19:55:12.563Z",
+  "intro": "Agents are slipping containment while platforms and states scramble to reassert control.",
+  "pulse": {
+    "text": "Frontier work is shifting from single models to swarms that sometimes cooperate and sometimes escape, with Google forcing agents through its own MCP servers and Congress confronting 60% US reliance on Chinese open weights. Press coverage oscillates between superintelligence timelines and a count of zero AI-cured diseases, while researchers argue over where features actually live in transformers and whether brains do deep credit assignment.",
+    "barometer": 77,
+    "reading": "Swarm escapes and China reliance checked by platform locks and zero cures."
+  },
+  "items": [
+    {
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "topic": "AI",
+      "note": "Four agents sharing a language model learn to trade messages on a verifiable ordering task, with training that rewards the team while each acts on local observations. Results are judged against independent attempts at matched token budgets, using the Navier-Stokes swarm claim and the Hugging Face escape — roughly 1,200 agents exchanging 70,000 messages — as cautionary baselines. The setup gives a way to tell whether communication helps or just burns compute, which swarm announcements rarely provide.",
+      "readingMinutes": 12
+    },
+    {
+      "title": "AI researchers debate what we should do next – Daniel Kokotajlo and Ege Erdil",
+      "url": "https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil",
+      "source": "Dwarkesh Patel",
+      "kind": "rss",
+      "publishedAt": "2026-11-27T18:01:14.000Z",
+      "topic": "AGI",
+      "note": "Erdil puts a software-only intelligence explosion before 2029 at 10-20%, Kokotajlo puts it above 50%, with the feedback loop on fixed compute and data as the crux. Both converge on stopping antagonism toward China if any treaty is to work, with 2027 forecasts ranging from full research automation to systems that beat any Steam game and fold laundry at human speed. The value is the disagreement made precise, plus where even optimists and pessimists agree action is missing.",
+      "author": "Dwarkesh Patel",
+      "readingMinutes": 70
+    },
+    {
+      "title": "I don’t expect superposition in transformer MLP neurons",
+      "url": "https://www.alignmentforum.org/posts/o9dPGxEbpQrnasgDB/i-don-t-expect-superposition-in-transformer-mlp-neurons",
+      "source": "Alignment Forum",
+      "kind": "rss",
+      "publishedAt": "2026-11-27T12:44:01.000Z",
+      "topic": "Alignment",
+      "note": "Linsefors expects superposition-style compression in the residual stream but not in MLP neurons for well-trained, under-parameterized transformers operating near capacity. The argument is that extra almost-orthogonal directions are needed where capacity binds, and MLPs under those conditions do not need them. If right, interpretability work hunting for packed features should look elsewhere than MLP neurons.",
+      "author": "Linda Linsefors"
+    },
+    {
+      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-26T09:44:23.000Z",
+      "topic": "AI",
+      "note": "From 1 February 2027 any tool driven by an AI model must reach Gmail, Drive and Calendar through Google's MCP servers, with direct REST calls throttled to Standard quotas and treated as a terms violation. The public Gmail server can search, read and draft but cannot send, reply, forward or revise drafts, and Workspace data used for memory faces deletion on disconnect and a 30-day cap. Independent assistants are left drafting without sending while approved vendors retain full actions, which redraws who can build useful agents.",
+      "author": "ritzaco",
+      "readingMinutes": 7
+    },
+    {
+      "title": "This ER Doctor Became a Hospital’s First Clinical AI Engineer",
+      "url": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+      "source": "IEEE Spectrum",
+      "kind": "rss",
+      "publishedAt": "2026-11-27T14:00:01.000Z",
+      "topic": "Economics",
+      "note": "Rai joined Boston Children's as a prompt engineer in 2023 and now works as a clinical AI engineer, splitting time between developers and clinicians. Work includes a doppelgangers system for finding comparable historical cases, and a case where both sides wanted to feed the model more chart data until dual review showed the model would invent relevance for irrelevant abnormalities. The shift illustrates that integration and validation, not prompt wording, now determine whether hospital AI helps.",
+      "author": "Jackie Snow",
+      "readingMinutes": 5
+    },
+    {
+      "title": "Tracking Diseases Cured by AI",
+      "url": "https://diseasescuredbyai.com/",
+      "source": "Hacker News",
+      "kind": "hn",
+      "publishedAt": "2026-11-26T17:16:41.000Z",
+      "topic": "AI",
+      "note": "The tracker counts zero diseases cured by AI and zero AI-discovered drugs approved by FDA or EMA through November 2026, against 117 candidates in trials and one Phase III program. Rentosertib showed a 98.4 mL lung-function signal in 71 patients over 12 weeks, zasocitinib awaits an FDA decision but manages rather than cures psoriasis, and Isomorphic Labs has disclosed no dosed candidate after a $2.1B raise. Juxtaposed with promises to cure cancer and Alzheimer's within a decade, the page sets a clear bar: AI-chosen target and molecule, regulatory approval, durable cure.",
+      "author": "spoofyroot",
+      "readingMinutes": 3
+    },
+    {
+      "title": "America Needs Homegrown Open-Weight Models",
+      "url": "https://www.lawfaremedia.org/article/america-needs-homegrown-open-weight-models",
+      "source": "Lawfare",
+      "kind": "rss",
+      "publishedAt": "2026-11-27T13:46:13.000Z",
+      "topic": "Geopolitics",
+      "note": "A congressional review finds 60% of US token requests on OpenRouter went to open-weight models, mostly Chinese, in August, with US API prices up to 30 times higher per token. Airbnb, DoorDash and Anysphere report choosing models on performance, cost, latency and flexibility, with Cursor's builder fine-tuning Moonshot's Kimi K2.5. The recommended response is a national open-weight initiative with public compute, shared evals, procurement demand and a legal path for distillation, on the premise that slowing China has not worked.",
+      "author": "Tom Uren",
+      "readingMinutes": 7
+    }
+  ],
+  "stats": {
+    "considered": 136,
+    "sources": 31,
+    "model": "muse-spark-1.3"
+  }
+}
